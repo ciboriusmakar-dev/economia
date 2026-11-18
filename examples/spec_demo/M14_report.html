@@ -1,0 +1,162 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Экономические риски — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Экономические риски</h1><div class="id">Модуль M14</div><span class="badge warn">Расчёт выполнен, есть предупреждения</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M14; происхождение synthetic; записей 4; SHA-256 входа 63c8ad7781805a329c615ba0da473794d4720f1fc538c727a69793935175bfa8. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Базовый результат (выручка − затраты): 300,0.</li><li>Сильнее всего на результат влияет «Спрос»: рост на 10 % меняет результат на 100,0, падение на 10 % — на -100,0.</li><li>Сценарий «Энергия +50 %»: результат 225,0, это на 75,0 (25 %) меньше базы. Допущения: тарифы растут, переложить в цену нельзя.</li><li>Сценарий «Доллар +25 %»: результат 240,0, это на 60,0 (20 %) меньше базы.</li><li>Сценарий «Стресс: спрос −20 %, энергия +40 %» (стресс): результат 40,0, это на 260,0 (87 %) меньше базы.</li></ul></div><div class="card"><h2>Изменение результата по сценариям</h2><svg viewBox="0 0 720 128" width="100%" role="img" aria-label="Изменение результата по сценариям"><line x1="640.0" x2="640.0" y1="10" y2="108" class="axis"/><text x="222" y="32" text-anchor="end">Энергия +50 %</text><rect x="538.0" y="19" width="102.0" height="18" rx="2" class="barneg"><title>Энергия +50 %: -75,0</title></rect><text x="532.0" y="32" text-anchor="end">-75,0</text><text x="222" y="62" text-anchor="end">Доллар +25 %</text><rect x="558.4" y="49" width="81.6" height="18" rx="2" class="barneg"><title>Доллар +25 %: -60,0</title></rect><text x="552.4" y="62" text-anchor="end">-60,0</text><text x="222" y="92" text-anchor="end">Стресс: спрос −20 %, энергия +40 %</text><rect x="286.6" y="79" width="353.4" height="18" rx="2" class="barneg"><title>Стресс: спрос −20 %, энергия +40 %: -260,0</title></rect><text x="280.6" y="92" text-anchor="end">-260,0</text></svg></div><div class="card"><h2>Чувствительность результата</h2><table><thead><tr><th class=l>Фактор</th><th>+10 %</th><th>−10 %</th><th>Размах</th></tr></thead><tbody><tr><td class=l>Спрос</td><td>100,0</td><td>-100,0</td><td>200,0</td></tr><tr><td class=l>Курс доллара</td><td>-24,0</td><td>24,0</td><td>48,0</td></tr><tr><td class=l>Цена энергии</td><td>-15,0</td><td>15,0</td><td>30,0</td></tr></tbody></table></div><div class="card"><h2>Сценарии</h2><table><thead><tr><th class=l>Сценарий</th><th>Результат</th><th>Изменение</th><th>Изменение, %</th><th class=l>Стресс</th></tr></thead><tbody><tr><td class=l>Энергия +50 %</td><td>225,0</td><td>-75,0</td><td>-25,00</td><td class=l></td></tr><tr><td class=l>Доллар +25 %</td><td>240,0</td><td>-60,0</td><td>-20,00</td><td class=l></td></tr><tr><td class=l>Стресс: спрос −20 %, энергия +40 %</td><td>40,0</td><td>-260,0</td><td>-86,67</td><td class=l>да</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Сценарии — допущения пользователя, а не прогноз. Реакция статей на факторы (pass_through) задана вручную и должна быть обоснована.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 63c8ad7781805a329c615ba0da473794d4720f1fc538c727a69793935175bfa8</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;base_result&quot;: 300.0,
+    &quot;sensitivity&quot;: [
+      {
+        &quot;factor&quot;: &quot;demand&quot;,
+        &quot;if_up&quot;: 100.0,
+        &quot;if_down&quot;: -100.0,
+        &quot;swing&quot;: 200.0
+      },
+      {
+        &quot;factor&quot;: &quot;usd&quot;,
+        &quot;if_up&quot;: -24.0,
+        &quot;if_down&quot;: 24.0,
+        &quot;swing&quot;: 48.0
+      },
+      {
+        &quot;factor&quot;: &quot;energy&quot;,
+        &quot;if_up&quot;: -15.0,
+        &quot;if_down&quot;: 15.0,
+        &quot;swing&quot;: 30.0
+      }
+    ],
+    &quot;scenarios&quot;: [
+      {
+        &quot;name&quot;: &quot;Энергия +50 %&quot;,
+        &quot;stress&quot;: false,
+        &quot;assumptions&quot;: &quot;тарифы растут, переложить в цену нельзя&quot;,
+        &quot;shocks&quot;: {
+          &quot;energy&quot;: 50
+        },
+        &quot;result&quot;: 225.0,
+        &quot;change&quot;: -75.0,
+        &quot;change_pct&quot;: -25.0,
+        &quot;items&quot;: [
+          {
+            &quot;name&quot;: &quot;Выручка&quot;,
+            &quot;type&quot;: &quot;revenue&quot;,
+            &quot;base&quot;: 1000.0,
+            &quot;new&quot;: 1000.0
+          },
+          {
+            &quot;name&quot;: &quot;Энергия&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 150.0,
+            &quot;new&quot;: 225.0
+          },
+          {
+            &quot;name&quot;: &quot;Импортное сырьё&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 300.0,
+            &quot;new&quot;: 300.0
+          },
+          {
+            &quot;name&quot;: &quot;Зарплата&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 250.0,
+            &quot;new&quot;: 250.0
+          }
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;Доллар +25 %&quot;,
+        &quot;stress&quot;: false,
+        &quot;assumptions&quot;: &quot;&quot;,
+        &quot;shocks&quot;: {
+          &quot;usd&quot;: 25
+        },
+        &quot;result&quot;: 240.0,
+        &quot;change&quot;: -60.0,
+        &quot;change_pct&quot;: -20.0,
+        &quot;items&quot;: [
+          {
+            &quot;name&quot;: &quot;Выручка&quot;,
+            &quot;type&quot;: &quot;revenue&quot;,
+            &quot;base&quot;: 1000.0,
+            &quot;new&quot;: 1000.0
+          },
+          {
+            &quot;name&quot;: &quot;Энергия&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 150.0,
+            &quot;new&quot;: 150.0
+          },
+          {
+            &quot;name&quot;: &quot;Импортное сырьё&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 300.0,
+            &quot;new&quot;: 360.0
+          },
+          {
+            &quot;name&quot;: &quot;Зарплата&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 250.0,
+            &quot;new&quot;: 250.0
+          }
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;Стресс: спрос −20 %, энергия +40 %&quot;,
+        &quot;stress&quot;: true,
+        &quot;assumptions&quot;: &quot;&quot;,
+        &quot;shocks&quot;: {
+          &quot;demand&quot;: -20,
+          &quot;energy&quot;: 40
+        },
+        &quot;result&quot;: 40.0,
+        &quot;change&quot;: -260.0,
+        &quot;change_pct&quot;: -86.66666666666667,
+        &quot;items&quot;: [
+          {
+            &quot;name&quot;: &quot;Выручка&quot;,
+            &quot;type&quot;: &quot;revenue&quot;,
+            &quot;base&quot;: 1000.0,
+            &quot;new&quot;: 800.0
+          },
+          {
+            &quot;name&quot;: &quot;Энергия&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 150.0,
+            &quot;new&quot;: 210.0
+          },
+          {
+            &quot;name&quot;: &quot;Импортное сырьё&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 300.0,
+            &quot;new&quot;: 300.0
+          },
+          {
+            &quot;name&quot;: &quot;Зарплата&quot;,
+            &quot;type&quot;: &quot;cost&quot;,
+            &quot;base&quot;: 250.0,
+            &quot;new&quot;: 250.0
+          }
+        ]
+      }
+    ]
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 4,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M14&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

@@ -1,0 +1,73 @@
+{
+  "version": "1.8.2",
+  "python_compile": "PASS",
+  "unittest": {
+    "passed": 95,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "data_intake": {
+    "supported_formats": [
+      "CSV",
+      "TSV",
+      "XLSX",
+      "JSON-stat 2.0",
+      "ZIP"
+    ],
+    "batch_directory_supported": true,
+    "zip_path_traversal_protection": "PASS",
+    "sha256_source_and_normalized": "PASS",
+    "pilot_files_attempted": 4,
+    "pilot_files_ingested": 4,
+    "pilot_import_errors": 0,
+    "pilot_overall_status": "PASS_WITH_WARNINGS",
+    "warnings": "Паспорта/часть метаданных отсутствуют; структурный импорт не подтверждает семантическую корректность."
+  },
+  "quality_controls": {
+    "missing_values": "PASS; never converted to zero",
+    "numeric_validation": "PASS",
+    "duplicate_rows_and_keys": "PASS",
+    "annual_quarterly_monthly_period_gaps": "PASS",
+    "units_currency_price_basis_classification_cross_source": "PASS_WITH_EXPLICIT_METADATA",
+    "dataset_passport_validation": "PASS"
+  },
+  "independent_validation": {
+    "comparison_metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE_percent",
+      "max_absolute_error"
+    ],
+    "same_source_reference_rejected": true,
+    "metadata_mismatch_rejected": true,
+    "synthetic_harness_tests": "PASS",
+    "independent_external_reproduction": "NOT_PERFORMED"
+  },
+  "empirical_test_plan": {
+    "modules_covered": 14,
+    "status": "PASS_AS_TEST_SPECIFICATION",
+    "file": "EMPIRICAL_TEST_PLAN_M01_M14_RU.csv"
+  },
+  "module_empirical_status_file": "EMPIRICAL_STATUS_M01_M14_RU.csv",
+  "limited_real_data_pilots": {
+    "files": 4,
+    "modules": [
+      "M01",
+      "M04",
+      "M05",
+      "M06",
+      "M09"
+    ],
+    "status": "PARTIAL_PILOTS_ONLY"
+  },
+  "full_real_datasets_downloaded": 0,
+  "full_empirical_confirmation_percent": 0,
+  "independent_external_reproduction": "NOT_PERFORMED",
+  "release_readiness": "DATA_INTAKE_AND_VALIDATION_FRAMEWORK_IMPLEMENTED; FULL_EMPIRICAL_VALIDATION_PENDING",
+  "limitations": [
+    "XLSX active sheet/cached values only; formulas not recalculated",
+    "JSON input expects JSON-stat 2.0",
+    "Units/classifications require explicit metadata",
+    "M08/M10/M12/M13 require case-specific data"
+  ]
+}

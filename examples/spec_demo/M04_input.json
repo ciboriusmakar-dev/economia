@@ -1,0 +1,197 @@
+{
+ "dataset_id": "DEMO-M04",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "industry": "Машиностроение",
+   "year": 2015,
+   "value_added": 100.0,
+   "employment": 50.0,
+   "capital": 300.0
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2016,
+   "value_added": 103.49999999999999,
+   "employment": 50.24999999999999,
+   "capital": 309.0
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2017,
+   "value_added": 107.12249999999999,
+   "employment": 50.501249999999985,
+   "capital": 318.27
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2018,
+   "value_added": 110.87178749999997,
+   "employment": 50.75375624999998,
+   "capital": 327.8181
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2019,
+   "value_added": 114.75230006249997,
+   "employment": 51.007525031249976,
+   "capital": 337.65264300000007
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2020,
+   "value_added": 118.76863056468746,
+   "employment": 51.26256265640622,
+   "capital": 347.78222229
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2021,
+   "value_added": 122.9255326344515,
+   "employment": 51.518875469688254,
+   "capital": 358.2156889587
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2022,
+   "value_added": 127.22792627665729,
+   "employment": 51.77646984703669,
+   "capital": 368.96215962746106
+  },
+  {
+   "industry": "Машиностроение",
+   "year": 2023,
+   "value_added": 131.6809036963403,
+   "employment": 52.035352196271866,
+   "capital": 380.03102441628494
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2015,
+   "value_added": 80.0,
+   "employment": 50.0,
+   "capital": 200.0
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2016,
+   "value_added": 81.60000000000001,
+   "employment": 50.5,
+   "capital": 206.0
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2017,
+   "value_added": 83.232,
+   "employment": 51.005,
+   "capital": 212.17999999999998
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2018,
+   "value_added": 84.89664000000002,
+   "employment": 51.51505000000001,
+   "capital": 218.5454
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2019,
+   "value_added": 86.59457280000001,
+   "employment": 52.0302005,
+   "capital": 225.10176200000004
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2020,
+   "value_added": 88.32646425600001,
+   "employment": 52.550502505000004,
+   "capital": 231.85481486
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2021,
+   "value_added": 90.09299354112001,
+   "employment": 53.076007530050006,
+   "capital": 238.81045930580004
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2022,
+   "value_added": 91.8948534119424,
+   "employment": 53.606767605350505,
+   "capital": 245.97477308497403
+  },
+  {
+   "industry": "Пищевая",
+   "year": 2023,
+   "value_added": 93.73275048018127,
+   "employment": 54.14283528140401,
+   "capital": 253.35401627752327
+  },
+  {
+   "industry": "Химия",
+   "year": 2015,
+   "value_added": 120.0,
+   "employment": 50.0,
+   "capital": 400.0
+  },
+  {
+   "industry": "Химия",
+   "year": 2016,
+   "value_added": 123.6,
+   "employment": 49.75,
+   "capital": 412.0
+  },
+  {
+   "industry": "Химия",
+   "year": 2017,
+   "value_added": 127.30799999999999,
+   "employment": 49.50125,
+   "capital": 424.35999999999996
+  },
+  {
+   "industry": "Химия",
+   "year": 2018,
+   "value_added": 131.12724,
+   "employment": 49.25374375,
+   "capital": 437.0908
+  },
+  {
+   "industry": "Химия",
+   "year": 2019,
+   "value_added": 135.06105720000002,
+   "employment": 49.007475031249996,
+   "capital": 450.2035240000001
+  },
+  {
+   "industry": "Химия",
+   "year": 2020,
+   "value_added": 139.112888916,
+   "employment": 48.76243765609375,
+   "capital": 463.70962972
+  },
+  {
+   "industry": "Химия",
+   "year": 2021,
+   "value_added": 143.28627558348,
+   "employment": 48.51862546781328,
+   "capital": 477.6209186116001
+  },
+  {
+   "industry": "Химия",
+   "year": 2022,
+   "value_added": 147.58486385098442,
+   "employment": 48.27603234047421,
+   "capital": 491.94954616994806
+  },
+  {
+   "industry": "Химия",
+   "year": 2023,
+   "value_added": 152.01240976651397,
+   "employment": 48.03465217877184,
+   "capital": 506.70803255504654
+  }
+ ]
+}

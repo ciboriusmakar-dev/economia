@@ -1,0 +1,308 @@
+{
+ "dataset_id": "DEMO-M02",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "period": "2019-01",
+   "value": 221.65,
+   "price": 51.5
+  },
+  {
+   "period": "2019-02",
+   "value": 228.77,
+   "price": 51.01
+  },
+  {
+   "period": "2019-03",
+   "value": 222.48,
+   "price": 49.77
+  },
+  {
+   "period": "2019-04",
+   "value": 212.12,
+   "price": 49.1
+  },
+  {
+   "period": "2019-05",
+   "value": 204.68,
+   "price": 49.8
+  },
+  {
+   "period": "2019-06",
+   "value": 193.9,
+   "price": 51.43
+  },
+  {
+   "period": "2019-07",
+   "value": 181.05,
+   "price": 52.67
+  },
+  {
+   "period": "2019-08",
+   "value": 178.75,
+   "price": 52.56
+  },
+  {
+   "period": "2019-09",
+   "value": 187.33,
+   "price": 51.37
+  },
+  {
+   "period": "2019-10",
+   "value": 195.89,
+   "price": 50.38
+  },
+  {
+   "period": "2019-11",
+   "value": 205.12,
+   "price": 50.69
+  },
+  {
+   "period": "2019-12",
+   "value": 220.85,
+   "price": 52.21
+  },
+  {
+   "period": "2020-01",
+   "value": 234.25,
+   "price": 53.73
+  },
+  {
+   "period": "2020-02",
+   "value": 235.07,
+   "price": 54.03
+  },
+  {
+   "period": "2020-03",
+   "value": 229.94,
+   "price": 53.02
+  },
+  {
+   "period": "2020-04",
+   "value": 225.58,
+   "price": 51.79
+  },
+  {
+   "period": "2020-05",
+   "value": 215.44,
+   "price": 51.67
+  },
+  {
+   "period": "2020-06",
+   "value": 199.34,
+   "price": 52.96
+  },
+  {
+   "period": "2020-07",
+   "value": 190.56,
+   "price": 54.66
+  },
+  {
+   "period": "2020-08",
+   "value": 192.52,
+   "price": 55.4
+  },
+  {
+   "period": "2020-09",
+   "value": 195.94,
+   "price": 54.66
+  },
+  {
+   "period": "2020-10",
+   "value": 201.57,
+   "price": 53.31
+  },
+  {
+   "period": "2020-11",
+   "value": 216.72,
+   "price": 52.77
+  },
+  {
+   "period": "2020-12",
+   "value": 233.86,
+   "price": 53.73
+  },
+  {
+   "period": "2021-01",
+   "value": 240.97,
+   "price": 55.5
+  },
+  {
+   "period": "2021-02",
+   "value": 242.01,
+   "price": 56.64
+  },
+  {
+   "period": "2021-03",
+   "value": 243.1,
+   "price": 56.27
+  },
+  {
+   "period": "2021-04",
+   "value": 236.92,
+   "price": 54.91
+  },
+  {
+   "period": "2021-05",
+   "value": 221.03,
+   "price": 53.99
+  },
+  {
+   "period": "2021-06",
+   "value": 208.23,
+   "price": 54.55
+  },
+  {
+   "period": "2021-07",
+   "value": 204.36,
+   "price": 56.26
+  },
+  {
+   "period": "2021-08",
+   "value": 201.75,
+   "price": 57.74
+  },
+  {
+   "period": "2021-09",
+   "value": 201.44,
+   "price": 57.81
+  },
+  {
+   "period": "2021-10",
+   "value": 212.6,
+   "price": 56.58
+  },
+  {
+   "period": "2021-11",
+   "value": 230.05,
+   "price": 55.35
+  },
+  {
+   "period": "2021-12",
+   "value": 241.07,
+   "price": 55.45
+  },
+  {
+   "period": "2022-01",
+   "value": 247.46,
+   "price": 56.98
+  },
+  {
+   "period": "2022-02",
+   "value": 254.8,
+   "price": 58.72
+  },
+  {
+   "period": "2022-03",
+   "value": 254.99,
+   "price": 59.25
+  },
+  {
+   "period": "2022-04",
+   "value": 242.74,
+   "price": 58.26
+  },
+  {
+   "period": "2022-05",
+   "value": 229.31,
+   "price": 56.84
+  },
+  {
+   "period": "2022-06",
+   "value": 221.96,
+   "price": 56.48
+  },
+  {
+   "period": "2022-07",
+   "value": 214.22,
+   "price": 57.7
+  },
+  {
+   "period": "2022-08",
+   "value": 207.16,
+   "price": 59.58
+  },
+  {
+   "period": "2022-09",
+   "value": 211.86,
+   "price": 60.56
+  },
+  {
+   "period": "2022-10",
+   "value": 226.18,
+   "price": 59.93
+  },
+  {
+   "period": "2022-11",
+   "value": 237.8,
+   "price": 58.43
+  },
+  {
+   "period": "2022-12",
+   "value": 247.17,
+   "price": 57.63
+  },
+  {
+   "period": "2023-01",
+   "value": 259.81,
+   "price": 58.46
+  },
+  {
+   "period": "2023-02",
+   "value": 267.2,
+   "price": 60.34
+  },
+  {
+   "period": "2023-03",
+   "value": 261.12,
+   "price": 61.74
+  },
+  {
+   "period": "2023-04",
+   "value": 250.44,
+   "price": 61.54
+  },
+  {
+   "period": "2023-05",
+   "value": 242.87,
+   "price": 60.1
+  },
+  {
+   "period": "2023-06",
+   "value": 232.43,
+   "price": 58.93
+  },
+  {
+   "period": "2023-07",
+   "value": 219.63,
+   "price": 59.29
+  },
+  {
+   "period": "2023-08",
+   "value": 216.96,
+   "price": 61.04
+  },
+  {
+   "period": "2023-09",
+   "value": 225.59,
+   "price": 62.77
+  },
+  {
+   "period": "2023-10",
+   "value": 234.51,
+   "price": 63.06
+  },
+  {
+   "period": "2023-11",
+   "value": 243.59,
+   "price": 61.82
+  },
+  {
+   "period": "2023-12",
+   "value": 259.01,
+   "price": 60.37
+  }
+ ]
+}

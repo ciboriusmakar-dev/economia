@@ -1,0 +1,4 @@
+product_group,primary_industry_eur_bn,secondary_industry_eur_bn,tertiary_industry_eur_bn,intermediate_use_reported_eur_bn,final_use_eur_bn,total_use_eur_bn,sum_matrix_eur_bn,matrix_rounding_difference_eur_bn,use_identity_difference_eur_bn
+Primary sector products,13.6,61.1,4.2,79.0,45.3,124.3,78.9,0.1,0.0
+Secondary sector products,17.9,1458.1,396.3,1872.2,2435.5,4307.7,1872.3,-0.1,0.0
+Tertiary sector products,16.0,646.0,1765.5,2427.5,3015.3,5442.8,2427.5,0.0,0.0

@@ -1,0 +1,69 @@
+{
+  "version": "1.8.7",
+  "python_compile": "PASS",
+  "unittest": {
+    "passed": 76,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "core_self_test": {
+    "passed": 3,
+    "total": 3,
+    "status": "PASS"
+  },
+  "synthetic_reference_suite": {
+    "passed": 14,
+    "total": 14,
+    "status": "PASS"
+  },
+  "synthetic_benchmarks": {
+    "models_run": 14,
+    "all_models": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14"
+    ],
+    "status": "PASS",
+    "results_file": "benchmark_results_v1_8_1.json",
+    "note": "Synthetic timing only; not empirical validation"
+  },
+  "database": {
+    "status": "PASS",
+    "registered_models": 14,
+    "dependency_edges": 17,
+    "smoke_runs_removed_from_release_db": 0
+  },
+  "empirical_stage2": {
+    "real_models_completed": 0,
+    "statuses": {
+      "M01": "BLOCKED_MISSING_REAL_DATA",
+      "M04": "BLOCKED_MISSING_REAL_DATA",
+      "M05": "BLOCKED_MISSING_REAL_DATA",
+      "M02": "BLOCKED_MISSING_REAL_DATA",
+      "M03": "BLOCKED_MISSING_REAL_DATA",
+      "M06": "BLOCKED_MISSING_FULL_IO_TABLE"
+    },
+    "status": "BLOCKED_MISSING_FULL_REAL_DATA"
+  },
+  "independent_external_reproduction": "NOT_PERFORMED",
+  "source_file_licences": "VERIFY_PER_FILE_ON_DOWNLOAD",
+  "release_readiness": "SOFTWARE_SCOPE_IMPLEMENTED_WITH_LIMITATIONS; EMPIRICAL_VALIDATION_PENDING",
+  "software_checklist_completion_percent": 100,
+  "software_checklist_scope": "All items explicitly requested in the current programming scope",
+  "empirical_confirmation_percent_full_real_data": 0,
+  "data_acquisition": {
+    "comext_ds_045409": "FILTERED_PRODUCT_REQUESTS_IMPLEMENTED; PRODUCT_CONCORDANCE_REQUIRED",
+    "full_real_datasets_downloaded": 0
+  }
+}

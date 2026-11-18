@@ -1,0 +1,68 @@
+{
+ "dataset_id": "DEMO-M07",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "year": 2015,
+   "gdp_real": 1000.0,
+   "gdp_nominal": 1000.0,
+   "employment": 40.0
+  },
+  {
+   "year": 2016,
+   "gdp_real": 1029.6,
+   "gdp_nominal": 1060.5,
+   "employment": 40.2
+  },
+  {
+   "year": 2017,
+   "gdp_real": 1051.9,
+   "gdp_nominal": 1116.0,
+   "employment": 40.4
+  },
+  {
+   "year": 2018,
+   "gdp_real": 1065.8,
+   "gdp_nominal": 1164.6,
+   "employment": 40.6
+  },
+  {
+   "year": 2019,
+   "gdp_real": 1078.5,
+   "gdp_nominal": 1213.9,
+   "employment": 40.8
+  },
+  {
+   "year": 2020,
+   "gdp_real": 1098.9,
+   "gdp_nominal": 1273.9,
+   "employment": 41.0
+  },
+  {
+   "year": 2021,
+   "gdp_real": 1129.6,
+   "gdp_nominal": 1348.8,
+   "employment": 41.2
+  },
+  {
+   "year": 2022,
+   "gdp_real": 1164.2,
+   "gdp_nominal": 1431.8,
+   "employment": 41.4
+  },
+  {
+   "year": 2023,
+   "gdp_real": 1192.6,
+   "gdp_nominal": 1510.7,
+   "employment": 41.6
+  },
+  {
+   "year": 2024,
+   "gdp_real": 1210.6,
+   "gdp_nominal": 1579.6,
+   "employment": 41.8
+  }
+ ]
+}

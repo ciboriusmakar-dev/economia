@@ -1,0 +1,140 @@
+{
+  "created_at": "2026-11-15",
+  "project_version": "1.5",
+  "M01": {
+    "status": "REAL_DATA_INGESTED_RESIDUAL_COMPUTED",
+    "source": "VDZ International Report 74, German cement production/consumption/import/export series 2021-2025; source notes Destatis and German Emissions Trading Authority",
+    "test": {
+      "n_years": 5,
+      "identity_check_passed": null,
+      "residuals_mt": {
+        "2021": 0.166,
+        "2022": -0.368,
+        "2023": 0.764,
+        "2024": 0.923,
+        "2025": 1.228
+      },
+      "interpretation": "Residual is an unallocated balancing item; it is NOT identified as inventory change or statistical error.",
+      "residual_calculated_for_all_years": true,
+      "warning": "The balancing residual is computed as supply minus identified uses. Since inventory changes, losses and other adjustments are not separately observed, this is not evidence that the physical balance is fully explained."
+    }
+  },
+  "M04": {
+    "status": "REAL_DATA_INGESTED_EXPLORATORY_MODEL_ESTIMATED",
+    "source": "Destatis enterprise statistics, Germany 2023 by economic section B-G",
+    "sample_n": 6,
+    "model": "ln(GVA at factor cost) = b0 + alpha ln(gross investment) + beta ln(persons employed) + error",
+    "coefficients": {
+      "intercept": -0.349428714971814,
+      "alpha_investment_proxy": 0.5466777649741879,
+      "beta_labor": 0.4771578040583746
+    },
+    "r_squared_in_sample": 0.9919618570297608,
+    "sse_log": 0.1345503807344342,
+    "condition_number_design": 124.33092190921995,
+    "limitations": [
+      "Gross investment is a flow, not capital stock; it is only a weak proxy for K.",
+      "Nominal cross-section of six broad sectors, not a production-function panel.",
+      "Only 3 residual degrees of freedom; coefficients are exploratory and not causal.",
+      "Sector heterogeneity and price/technology differences are uncontrolled."
+    ],
+    "status_detail": "Exploratory fit only; not independent validation of production-function specification."
+  },
+  "M05": {
+    "status": "REAL_DATA_INGESTED_AND_COST_RATIOS_TESTED",
+    "source": "Destatis enterprise statistics, Germany 2023 by economic section B-G",
+    "sample_n": 6,
+    "metrics": [
+      {
+        "nace": "B",
+        "sector": "Mining and quarrying",
+        "staff_cost_per_person_eur": 61646.08,
+        "staff_cost_share_turnover": 0.15366801,
+        "gva_share_turnover": 0.33267489,
+        "turnover_per_person_eur": 401164.06
+      },
+      {
+        "nace": "C",
+        "sector": "Manufacturing",
+        "staff_cost_per_person_eur": 65484.0,
+        "staff_cost_share_turnover": 0.18477902,
+        "gva_share_turnover": 0.26760624,
+        "turnover_per_person_eur": 354390.87
+      },
+      {
+        "nace": "D",
+        "sector": "Electricity, gas, steam and air conditioning supply",
+        "staff_cost_per_person_eur": 67221.35,
+        "staff_cost_share_turnover": 0.02280344,
+        "gva_share_turnover": 0.09176036,
+        "turnover_per_person_eur": 2947859.64
+      },
+      {
+        "nace": "E",
+        "sector": "Water supply; sewerage, waste management and remediation",
+        "staff_cost_per_person_eur": 56583.05,
+        "staff_cost_share_turnover": 0.19822475,
+        "gva_share_turnover": 0.38655618,
+        "turnover_per_person_eur": 285448.94
+      },
+      {
+        "nace": "F",
+        "sector": "Construction",
+        "staff_cost_per_person_eur": 41586.11,
+        "staff_cost_share_turnover": 0.26255521,
+        "gva_share_turnover": 0.40218812,
+        "turnover_per_person_eur": 158389.95
+      },
+      {
+        "nace": "G",
+        "sector": "Wholesale and retail trade; repair of motor vehicles",
+        "staff_cost_per_person_eur": 37546.48,
+        "staff_cost_share_turnover": 0.09459315,
+        "gva_share_turnover": 0.16228966,
+        "turnover_per_person_eur": 396925.99
+      }
+    ],
+    "limitations": [
+      "Sector aggregates, not firm/product cost ledgers.",
+      "Staff expenditure and turnover definitions differ from full economic cost accounting.",
+      "No variable/fixed cost decomposition; this tests ratios, not the entire cost function."
+    ]
+  },
+  "M06": {
+    "status": "REAL_DATA_INGESTED_AND_SUPPLY_USE_IDENTITY_TESTED_LEONTIEF_PENDING",
+    "source": "Destatis Input-output table 2023 (Revision 2024), aggregated extract in EUR bn",
+    "test": {
+      "table_type": "aggregated supply-use table; product rows x industry columns",
+      "n_products": 3,
+      "n_industries": 3,
+      "row_matrix_sums_eur_bn": [
+        78.9,
+        1872.3,
+        2427.5
+      ],
+      "reported_intermediate_use_eur_bn": [
+        79.0,
+        1872.2,
+        2427.5
+      ],
+      "matrix_rounding_differences_eur_bn": [
+        0.09999999999999432,
+        -0.09999999999990905,
+        0.0
+      ],
+      "use_identity_differences_eur_bn": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "use_identity_passed_with_0_11bn_rounding_tolerance": true,
+      "leontief_coefficients_estimated": false,
+      "reason": "This published 3x3 table is product-by-industry SUT, not a symmetric industry-by-industry or product-by-product IOT; output denominators by matching dimension are not available in this compact extract. Do not form A from this table."
+    },
+    "limitations": [
+      "3-sector aggregated extract only.",
+      "SUT product-by-industry table is not the symmetric Leontief matrix.",
+      "Full workbook required for proper industry-by-industry/product-by-product IOT and Leontief coefficient estimation."
+    ]
+  }
+}

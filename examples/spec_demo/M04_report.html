@@ -1,0 +1,204 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Анализ производительности — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Анализ производительности</h1><div class="id">Модуль M04</div><span class="badge warn">Расчёт выполнен, есть предупреждения</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M04; происхождение synthetic; записей 27; SHA-256 входа 18d82f7f4f7a25f06e9597eeaef7b83a54ac4d647c25d628e85bb06c704ca08b. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Производительность труда в последний год выше всего у «Химия» (3,2), ниже всего у «Пищевая» (1,7); среднее по группам 2,5.</li><li>«Машиностроение»: производительность труда растёт в среднем на 3,0 % в год.</li><li>«Машиностроение»: общая факторная производительность (ОФП): 2,2 % в год при доле капитала 0,30. Это расчётная оценка, а не измеренная величина.</li><li>«Пищевая»: производительность труда растёт в среднем на 1,0 % в год.</li><li>«Пищевая»: общая факторная производительность (ОФП): 0,4 % в год при доле капитала 0,30. Это расчётная оценка, а не измеренная величина.</li><li>«Химия»: производительность труда растёт в среднем на 3,5 % в год.</li><li>«Химия»: общая факторная производительность (ОФП): 2,4 % в год при доле капитала 0,30. Это расчётная оценка, а не измеренная величина.</li></ul></div><div class="card"><h2>Производительность труда (первый период = 100)</h2><svg viewBox="0 0 720 300" width="100%" role="img" aria-label="Производительность труда (первый период = 100)"><line x1="64" x2="696" y1="256.0" y2="256.0" class="grid"/><text x="56" y="260.0" text-anchor="end">98,09</text><line x1="64" x2="696" y1="195.5" y2="195.5" class="grid"/><text x="56" y="199.5" text-anchor="end">106,9</text><line x1="64" x2="696" y1="135.0" y2="135.0" class="grid"/><text x="56" y="139.0" text-anchor="end">115,6</text><line x1="64" x2="696" y1="74.5" y2="74.5" class="grid"/><text x="56" y="78.5" text-anchor="end">124,4</text><line x1="64" x2="696" y1="14.0" y2="14.0" class="grid"/><text x="56" y="18.0" text-anchor="end">133,2</text><text x="64.0" y="278" text-anchor="middle">2015</text><text x="222.0" y="278" text-anchor="middle">2017</text><text x="380.0" y="278" text-anchor="middle">2019</text><text x="538.0" y="278" text-anchor="middle">2021</text><text x="696.0" y="278" text-anchor="middle">2023</text><polyline fill="none" stroke="var(--c1)" stroke-width="2.4" points="64.0,242.8 143.0,222.3 222.0,201.1 301.0,179.3 380.0,156.8 459.0,133.7 538.0,109.8 617.0,85.3 696.0,60.0"/><circle cx="64.0" cy="242.8" r="2.6" fill="var(--c1)"><title>Машиностроение, 2015: 100,0</title></circle><circle cx="143.0" cy="222.3" r="2.6" fill="var(--c1)"><title>Машиностроение, 2016: 103,0</title></circle><circle cx="222.0" cy="201.1" r="2.6" fill="var(--c1)"><title>Машиностроение, 2017: 106,1</title></circle><circle cx="301.0" cy="179.3" r="2.6" fill="var(--c1)"><title>Машиностроение, 2018: 109,2</title></circle><circle cx="380.0" cy="156.8" r="2.6" fill="var(--c1)"><title>Машиностроение, 2019: 112,5</title></circle><circle cx="459.0" cy="133.7" r="2.6" fill="var(--c1)"><title>Машиностроение, 2020: 115,8</title></circle><circle cx="538.0" cy="109.8" r="2.6" fill="var(--c1)"><title>Машиностроение, 2021: 119,3</title></circle><circle cx="617.0" cy="85.3" r="2.6" fill="var(--c1)"><title>Машиностроение, 2022: 122,9</title></circle><circle cx="696.0" cy="60.0" r="2.6" fill="var(--c1)"><title>Машиностроение, 2023: 126,5</title></circle><polyline fill="none" stroke="var(--c2)" stroke-width="2.4" stroke-dasharray="7 4" points="64.0,242.8 143.0,236.0 222.0,229.1 301.0,222.2 380.0,215.1 459.0,208.0 538.0,200.9 617.0,193.6 696.0,186.3"/><circle cx="64.0" cy="242.8" r="2.6" fill="var(--c2)"><title>Пищевая, 2015: 100,0</title></circle><circle cx="143.0" cy="236.0" r="2.6" fill="var(--c2)"><title>Пищевая, 2016: 101,0</title></circle><circle cx="222.0" cy="229.1" r="2.6" fill="var(--c2)"><title>Пищевая, 2017: 102,0</title></circle><circle cx="301.0" cy="222.2" r="2.6" fill="var(--c2)"><title>Пищевая, 2018: 103,0</title></circle><circle cx="380.0" cy="215.1" r="2.6" fill="var(--c2)"><title>Пищевая, 2019: 104,0</title></circle><circle cx="459.0" cy="208.0" r="2.6" fill="var(--c2)"><title>Пищевая, 2020: 105,0</title></circle><circle cx="538.0" cy="200.9" r="2.6" fill="var(--c2)"><title>Пищевая, 2021: 106,1</title></circle><circle cx="617.0" cy="193.6" r="2.6" fill="var(--c2)"><title>Пищевая, 2022: 107,1</title></circle><circle cx="696.0" cy="186.3" r="2.6" fill="var(--c2)"><title>Пищевая, 2023: 108,2</title></circle><polyline fill="none" stroke="var(--c3)" stroke-width="2.4" stroke-dasharray="2 3" points="64.0,242.8 143.0,218.6 222.0,193.5 301.0,167.5 380.0,140.6 459.0,112.8 538.0,84.0 617.0,54.2 696.0,23.3"/><circle cx="64.0" cy="242.8" r="2.6" fill="var(--c3)"><title>Химия, 2015: 100,0</title></circle><circle cx="143.0" cy="218.6" r="2.6" fill="var(--c3)"><title>Химия, 2016: 103,5</title></circle><circle cx="222.0" cy="193.5" r="2.6" fill="var(--c3)"><title>Химия, 2017: 107,2</title></circle><circle cx="301.0" cy="167.5" r="2.6" fill="var(--c3)"><title>Химия, 2018: 110,9</title></circle><circle cx="380.0" cy="140.6" r="2.6" fill="var(--c3)"><title>Химия, 2019: 114,8</title></circle><circle cx="459.0" cy="112.8" r="2.6" fill="var(--c3)"><title>Химия, 2020: 118,9</title></circle><circle cx="538.0" cy="84.0" r="2.6" fill="var(--c3)"><title>Химия, 2021: 123,1</title></circle><circle cx="617.0" cy="54.2" r="2.6" fill="var(--c3)"><title>Химия, 2022: 127,4</title></circle><circle cx="696.0" cy="23.3" r="2.6" fill="var(--c3)"><title>Химия, 2023: 131,9</title></circle></svg><div class="leg"><span><svg width="28" height="8"><line x1="0" x2="28" y1="4" y2="4" stroke="var(--c1)" stroke-width="2.4"/></svg>Машиностроение</span><span><svg width="28" height="8"><line x1="0" x2="28" y1="4" y2="4" stroke="var(--c2)" stroke-width="2.4" stroke-dasharray="7 4"/></svg>Пищевая</span><span><svg width="28" height="8"><line x1="0" x2="28" y1="4" y2="4" stroke="var(--c3)" stroke-width="2.4" stroke-dasharray="2 3"/></svg>Химия</span></div></div><div class="card"><h2>Производительность</h2><table><thead><tr><th class=l>Группа</th><th class=l>Последний период</th><th>Выпуск на работника</th><th>Рост в год, %</th><th>Выпуск на капитал</th><th>ОФП в год, %</th></tr></thead><tbody><tr><td class=l>Машиностроение</td><td class=l>2023</td><td>2,53</td><td>2,99</td><td>0,35</td><td>2,20</td></tr><tr><td class=l>Пищевая</td><td class=l>2023</td><td>1,73</td><td>0,99</td><td>0,37</td><td>0,40</td></tr><tr><td class=l>Химия</td><td class=l>2023</td><td>3,16</td><td>3,52</td><td>0,30</td><td>2,42</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Динамика производительности достоверна только если выпуск задан в постоянных ценах.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 18d82f7f4f7a25f06e9597eeaef7b83a54ac4d647c25d628e85bb06c704ca08b</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;groups&quot;: {
+      &quot;Машиностроение&quot;: {
+        &quot;periods&quot;: [
+          &quot;2015&quot;,
+          &quot;2016&quot;,
+          &quot;2017&quot;,
+          &quot;2018&quot;,
+          &quot;2019&quot;,
+          &quot;2020&quot;,
+          &quot;2021&quot;,
+          &quot;2022&quot;,
+          &quot;2023&quot;
+        ],
+        &quot;labour_productivity&quot;: [
+          2.0,
+          2.0597014925373136,
+          2.1211851191802187,
+          2.1845040779617175,
+          2.249713154915799,
+          2.3168687714804497,
+          2.3860290333156864,
+          2.4572537805788413,
+          2.530604639700598
+        ],
+        &quot;capital_productivity&quot;: [
+          0.3333333333333333,
+          0.3349514563106796,
+          0.3365774342539353,
+          0.3382113052940029,
+          0.3398531077468863,
+          0.3415028801145897,
+          0.34316066108601967,
+          0.34482648953789347,
+          0.34650040453565023
+        ],
+        &quot;capital_per_worker&quot;: [
+          6.0,
+          6.1492537313432845,
+          6.302220242073218,
+          6.4589918898859855,
+          6.619663329932902,
+          6.784331571971033,
+          6.953096038935486,
+          7.12605862696871,
+          7.303323766943057
+        ],
+        &quot;tfp_growth_pct&quot;: [
+          2.204250698714083,
+          2.2042506987141985,
+          2.2042506987141985,
+          2.204250698714172,
+          2.2042506987141985,
+          2.204250698714083,
+          2.2042506987141985,
+          2.204250698714172
+        ],
+        &quot;tfp_avg_growth_pct&quot;: 2.204250698714163,
+        &quot;labour_productivity_cagr_pct&quot;: 2.9850746268656803
+      },
+      &quot;Пищевая&quot;: {
+        &quot;periods&quot;: [
+          &quot;2015&quot;,
+          &quot;2016&quot;,
+          &quot;2017&quot;,
+          &quot;2018&quot;,
+          &quot;2019&quot;,
+          &quot;2020&quot;,
+          &quot;2021&quot;,
+          &quot;2022&quot;,
+          &quot;2023&quot;
+        ],
+        &quot;labour_productivity&quot;: [
+          1.6,
+          1.615841584158416,
+          1.6318400156847368,
+          1.6479968475231996,
+          1.6643136479937264,
+          1.6807920009441593,
+          1.6974335059040022,
+          1.7142397782396854,
+          1.7312124493113656
+        ],
+        &quot;capital_productivity&quot;: [
+          0.4,
+          0.396116504854369,
+          0.39227071354510323,
+          0.3884622600155392,
+          0.384690781762961,
+          0.3809559198040974,
+          0.37725731864095075,
+          0.37359462622696094,
+          0.3699674939334953
+        ],
+        &quot;capital_per_worker&quot;: [
+          4.0,
+          4.079207920792079,
+          4.159984315263209,
+          4.2423602422981235,
+          4.326367375808979,
+          4.4120380169141065,
+          4.49940510635795,
+          4.58850223717692,
+          4.679363667616067
+        ],
+        &quot;tfp_growth_pct&quot;: [
+          0.3969755026499345,
+          0.3969755026498147,
+          0.3969755026499345,
+          0.3969755026498147,
+          0.39697550264987236,
+          0.3969755026498768,
+          0.39697550264987236,
+          0.3969755026498768
+        ],
+        &quot;tfp_avg_growth_pct&quot;: 0.3969755026498746,
+        &quot;labour_productivity_cagr_pct&quot;: 0.990099009900991
+      },
+      &quot;Химия&quot;: {
+        &quot;periods&quot;: [
+          &quot;2015&quot;,
+          &quot;2016&quot;,
+          &quot;2017&quot;,
+          &quot;2018&quot;,
+          &quot;2019&quot;,
+          &quot;2020&quot;,
+          &quot;2021&quot;,
+          &quot;2022&quot;,
+          &quot;2023&quot;
+        ],
+        &quot;labour_productivity&quot;: [
+          2.4,
+          2.4844221105527637,
+          2.5718138430847706,
+          2.662279656660617,
+          2.755927684784358,
+          2.8528698646511432,
+          2.953222070945405,
+          3.057104254345495,
+          3.164640584900362
+        ],
+        &quot;capital_productivity&quot;: [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        &quot;capital_per_worker&quot;: [
+          8.0,
+          8.28140703517588,
+          8.572712810282567,
+          8.874265522202057,
+          9.18642561594786,
+          9.509566215503812,
+          9.844073569818018,
+          10.190347514484984,
+          10.548801949667872
+        ],
+        &quot;tfp_growth_pct&quot;: [
+          2.4199940845562296,
+          2.4199940845561985,
+          2.4199940845561674,
+          2.4199940845562606,
+          2.4199940845561674,
+          2.4199940845562606,
+          2.4199940845561985,
+          2.4199940845562296
+        ],
+        &quot;tfp_avg_growth_pct&quot;: 2.419994084556214,
+        &quot;labour_productivity_cagr_pct&quot;: 3.5175879396984966
+      }
+    },
+    &quot;alpha&quot;: 0.3
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 27,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M04&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

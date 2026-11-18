@@ -1,0 +1,35 @@
+{
+  "stage": "ECONOMIA stage 2",
+  "results": {
+    "M01": {
+      "status": "BLOCKED_MISSING_REAL_DATA",
+      "expected_file": "data/processed/M01_prodcom_long.csv"
+    },
+    "M04": {
+      "status": "BLOCKED_MISSING_REAL_DATA",
+      "expected_file": "data/processed/M04_STAN_long.csv"
+    },
+    "M05": {
+      "status": "BLOCKED_MISSING_REAL_DATA",
+      "expected_file": "data/processed/M05_value_added_components.csv"
+    },
+    "M02": {
+      "status": "BLOCKED_MISSING_REAL_DATA",
+      "expected_file": "data/processed/M02_market_monthly.csv"
+    },
+    "M03": {
+      "status": "BLOCKED_MISSING_REAL_DATA",
+      "expected_file": "data/processed/M03_market_monthly.csv"
+    },
+    "M06": {
+      "status": "BLOCKED_MISSING_FULL_IO_TABLE",
+      "required_files": [
+        "data/processed/M06_Z.csv",
+        "data/processed/M06_x.csv",
+        "data/processed/M06_Y.csv"
+      ]
+    }
+  },
+  "real_empirical_models_completed": 0,
+  "warning": "A successful code run is not independent external validation."
+}

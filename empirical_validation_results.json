@@ -1,0 +1,137 @@
+{
+  "dataset": "Germany GDP (current US$), annual",
+  "indicator": "NY.GDP.MKTP.CD",
+  "source": "World Bank World Development Indicators",
+  "source_url": "https://databank.worldbank.org/reports.aspx?country=DEU&series=NY.GDP.MKTP.CD&source=2",
+  "licence": "CC BY 4.0 (as shown on WDI indicator page)",
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "train_period": [
+    2016,
+    2022
+  ],
+  "holdout_period": [
+    2023,
+    2025
+  ],
+  "train_n": 7,
+  "holdout_n": 3,
+  "actual_holdout_usd": [
+    4562207532490.3,
+    4685592577804.7,
+    5050922925047.1
+  ],
+  "rolling_origin_one_step": {
+    "forecast_rows": {
+      "naive_last_value": [
+        {
+          "year": 2021,
+          "actual": 4355251953410.8,
+          "prediction": 3941398957073.9
+        },
+        {
+          "year": 2022,
+          "actual": 4201021706478.6,
+          "prediction": 4355251953410.8
+        },
+        {
+          "year": 2023,
+          "actual": 4562207532490.3,
+          "prediction": 4201021706478.6
+        },
+        {
+          "year": 2024,
+          "actual": 4685592577804.7,
+          "prediction": 4562207532490.3
+        },
+        {
+          "year": 2025,
+          "actual": 5050922925047.1,
+          "prediction": 4685592577804.7
+        }
+      ],
+      "linear_drift": [
+        {
+          "year": 2021,
+          "actual": 4355251953410.8,
+          "prediction": 4042551722547.625
+        },
+        {
+          "year": 2022,
+          "actual": 4201021706478.6,
+          "prediction": 4518944765057.16
+        },
+        {
+          "year": 2023,
+          "actual": 4562207532490.3,
+          "prediction": 4311727341695.2
+        },
+        {
+          "year": 2024,
+          "actual": 4685592577804.7,
+          "prediction": 4708696052106.2
+        },
+        {
+          "year": 2025,
+          "actual": 5050922925047.1,
+          "prediction": 4829193163132.913
+        }
+      ]
+    },
+    "metrics": {
+      "naive_last_value": {
+        "MAE_USD": 283596892367.51984,
+        "RMSE_USD": 307963181104.8327,
+        "MAPE_percent": 6.191356477249907
+      },
+      "linear_drift": {
+        "MAE_USD": 225187343290.5042,
+        "RMSE_USD": 249517409966.4794,
+        "MAPE_percent": 5.024177546973705
+      }
+    }
+  },
+  "models": {
+    "naive_last_value": {
+      "predicted_usd": [
+        4201021706478.6,
+        4201021706478.6,
+        4201021706478.6
+      ],
+      "metrics": {
+        "MAE_USD": 565219305302.0997,
+        "RMSE_USD": 602106361471.6008,
+        "MAPE_percent": 11.695093734888577
+      }
+    },
+    "linear_drift_from_training_endpoints": {
+      "predicted_usd": [
+        4311727341695.2,
+        4422432976911.8,
+        4533138612128.4
+      ],
+      "metrics": {
+        "MAE_USD": 343808034868.8997,
+        "RMSE_USD": 365191226723.54803,
+        "MAPE_percent": 7.119322272296401
+      }
+    }
+  },
+  "interpretation": [
+    "Это ограниченная эмпирическая проверка двух простых прогнозных ориентиров на одной годовой серии.",
+    "GDP в текущих долларах зависит от реального выпуска, внутренних цен и валютного курса; он не является чистым показателем реального роста.",
+    "Три наблюдения в фиксированном контрольном периоде и пять последовательных одношаговых прогнозов — ограниченная проверка, недостаточная для общего вывода о точности ECONOMIA.",
+    "Снимок данных не является автоматическим обновлением; перед промышленным использованием нужно повторно получить полный ряд и зафиксировать дату/версию."
+  ],
+  "status": "EMPIRICAL_PILOT_COMPLETED_LIMITED_SCOPE"
+}

@@ -1,0 +1,29 @@
+{
+  "suite": "ECONOMIA-core-self-test",
+  "tests": [
+    {
+      "id": "T001",
+      "passed": true,
+      "residual": 0,
+      "type": "synthetic"
+    },
+    {
+      "id": "T002",
+      "passed": true,
+      "output": [
+        139.68253968253967,
+        117.46031746031744
+      ],
+      "rho": 0.30000000000000004,
+      "residual": 0.0,
+      "type": "synthetic"
+    },
+    {
+      "id": "T003",
+      "passed": true,
+      "type": "synthetic"
+    }
+  ],
+  "all_passed": true,
+  "warning": "Синтетические проверки не подтверждают точность на реальных данных."
+}

@@ -1,0 +1,21 @@
+{
+  "version": "1.8.7",
+  "status": "BLOCKED_BY_BUILD_ENVIRONMENT_DNS",
+  "full_files_downloaded": 0,
+  "attempted_sources": [
+    "OECD 2025 national input-output tables: total, domestic/imports, value-added, published Leontief inverse",
+    "OECD STAN 2025",
+    "Eurostat PRODCOM ds-059358 (Germany; all available product, indicator and year dimensions)",
+    "Eurostat PRODCOM ds-059367 (Germany; all available product, indicator and year dimensions)",
+    "Eurostat Germany monthly retail, HICP, producer-price and unemployment datasets"
+  ],
+  "details": "Повторная проверка завершилась до HTTP-ответа: Temporary failure in name resolution для ec.europa.eu, sdmx.oecd.org и webfs-sti.oecd.org. Исправлена маршрутизация DS-префиксных наборов PRODCOM на отдельный Comext API, но среда не разрешает домены поставщиков.",
+  "no_synthetic_substitution": true,
+  "empirical_status": "M01-M06 are not confirmed on full real datasets",
+  "comext_ds_045409": {
+    "status": "FILTERED_DOWNLOADER_IMPLEMENTED",
+    "downloaded": false,
+    "blocked_until": "Проверенный список CN/HS кодов и соответствие PRODCOM↔CPA↔CN/HS",
+    "note": "Comext does not permit unfiltered full-cube download; requests must be bounded."
+  }
+}

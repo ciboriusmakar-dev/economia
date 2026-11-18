@@ -1,0 +1,23 @@
+{
+  "dataset_id": "replace-with-unique-dataset-version-id",
+  "source_id": "official-provider-or-dataset-id",
+  "version": "provider-release-or-retrieval-version",
+  "retrieved_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "licence_id": "official-licence-id-or-UNKNOWN",
+  "attribution": "required-source-attribution-text",
+  "files": ["original-source-file.csv"],
+  "data_mode": "real",
+  "origin": "observed",
+  "geography": "DE",
+  "period_start": "YYYY",
+  "period_end": "YYYY",
+  "frequency": "annual|quarterly|monthly",
+  "unit": "explicit-unit",
+  "currency": "EUR|not_applicable",
+  "price_basis": "current|constant-year|index|not_applicable",
+  "classification": "PRODCOM|NACE|CPA|CN|HS|other",
+  "classification_version": "explicit-version",
+  "source_url": "https://official-source.example/dataset",
+  "sha256_original": "64-character-hex-digest",
+  "notes": "methodology, flags, extraction filters and known limitations"
+}

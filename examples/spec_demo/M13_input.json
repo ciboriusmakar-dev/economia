@@ -1,0 +1,68 @@
+{
+ "dataset_id": "DEMO-M13",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "edges": [
+    {
+     "from": "Завод",
+     "to": "Склад А",
+     "distance": 120,
+     "time": 2,
+     "cost": 2.0,
+     "capacity": 80
+    },
+    {
+     "from": "Завод",
+     "to": "Склад Б",
+     "distance": 200,
+     "time": 5,
+     "cost": 3.0,
+     "capacity": 60
+    },
+    {
+     "from": "Склад А",
+     "to": "Магазин 1",
+     "distance": 60,
+     "time": 3,
+     "cost": 1.5,
+     "capacity": 50
+    },
+    {
+     "from": "Склад А",
+     "to": "Магазин 2",
+     "distance": 90,
+     "time": 4,
+     "cost": 2.5,
+     "capacity": 40
+    },
+    {
+     "from": "Склад Б",
+     "to": "Магазин 2",
+     "distance": 40,
+     "time": 2,
+     "cost": 1.0,
+     "capacity": 50
+    },
+    {
+     "from": "Склад Б",
+     "to": "Магазин 3",
+     "distance": 70,
+     "time": 3,
+     "cost": 2.0,
+     "capacity": 40
+    }
+   ],
+   "supply": {
+    "Завод": 100
+   },
+   "demand": {
+    "Магазин 1": 40,
+    "Магазин 2": 35,
+    "Магазин 3": 25
+   }
+  }
+ ]
+}

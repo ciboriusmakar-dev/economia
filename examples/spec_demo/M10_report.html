@@ -1,0 +1,75 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Оптимизация производства — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Оптимизация производства</h1><div class="id">Модуль M10</div><span class="badge warn">Расчёт выполнен, есть предупреждения</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M10; происхождение synthetic; записей 1; SHA-256 входа 114531b252eab1be1949239d0b27db6518cb89f1c08eaa9fd4cad07a2ab5f54a. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Целочисленный план: прибыль 3 783,00.</li><li>Объёмы: Кирпич — 80; Плитка — 19; Блоки — 24.</li><li>Узкие места (ресурс используется полностью): Труд.</li><li>Ещё одна единица ресурса «Труд» увеличила бы прибыль примерно на 9,35 (теневая цена, для небольшого изменения).</li><li>Второй критерий «Расход энергии» в оптимальном плане: 383,00. Компромиссные планы (чем лучше второй критерий, тем хуже основной) — в таблице «Компромисс».</li></ul></div><div class="card"><h2>Загрузка ресурсов, %</h2><svg viewBox="0 0 720 128" width="100%" role="img" aria-label="Загрузка ресурсов, %"><line x1="230.0" x2="230.0" y1="10" y2="108" class="axis"/><text x="222" y="32" text-anchor="end">Сырьё</text><rect x="230.0" y="19" width="351.3" height="18" rx="2" class="barpos"><title>Сырьё: 99,4</title></rect><text x="587.3" y="32" text-anchor="start">99,4</text><text x="222" y="62" text-anchor="end">Энергия</text><rect x="230.0" y="49" width="322.3" height="18" rx="2" class="barpos"><title>Энергия: 91,2</title></rect><text x="558.3" y="62" text-anchor="start">91,2</text><text x="222" y="92" text-anchor="end">Труд</text><rect x="230.0" y="79" width="353.4" height="18" rx="2" class="barpos"><title>Труд: 100,0</title></rect><text x="589.4" y="92" text-anchor="start">100,0</text></svg></div><div class="card"><h2>План производства</h2><table><thead><tr><th class=l>Продукт</th><th>Объём</th><th>Удельный доход</th><th>Вклад</th></tr></thead><tbody><tr><td class=l>Кирпич</td><td>80,00</td><td>30,00</td><td>2 400</td></tr><tr><td class=l>Плитка</td><td>19,00</td><td>45,00</td><td>855</td></tr><tr><td class=l>Блоки</td><td>24,00</td><td>22,00</td><td>528</td></tr></tbody></table></div><div class="card"><h2>Ресурсы, загрузка мощностей и теневые цены</h2><table><thead><tr><th class=l>Ресурс</th><th>Нужно</th><th>Мощность</th><th>Загрузка, %</th><th>Теневая цена</th></tr></thead><tbody><tr><td class=l>Сырьё</td><td>497,0</td><td>500,0</td><td>99,4</td><td>2,53</td></tr><tr><td class=l>Энергия</td><td>383,0</td><td>420,0</td><td>91,2</td><td>0,00</td></tr><tr><td class=l>Труд</td><td>260,0</td><td>260,0</td><td>100,0</td><td>9,35</td></tr></tbody></table></div><div class="card"><h2>Компромисс между критериями: прибыль и «Расход энергии»</h2><table><thead><tr><th>Прибыль</th><th>Расход энергии</th></tr></thead><tbody><tr><td>220</td><td>20,0</td></tr><tr><td>1 210</td><td>110,0</td></tr><tr><td>2 208</td><td>201,0</td></tr><tr><td>3 014</td><td>292,0</td></tr><tr><td>3 783</td><td>383,0</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Теневые цены посчитаны для линейной релаксации (без целочисленности) и только ориентировочны.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 114531b252eab1be1949239d0b27db6518cb89f1c08eaa9fd4cad07a2ab5f54a</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;optimal&quot;: true,
+    &quot;objective_value&quot;: 3783.0,
+    &quot;plan&quot;: {
+      &quot;Кирпич&quot;: 80.0,
+      &quot;Плитка&quot;: 19.0,
+      &quot;Блоки&quot;: 24.0
+    },
+    &quot;resource_use&quot;: {
+      &quot;Сырьё&quot;: 497.0,
+      &quot;Энергия&quot;: 383.0,
+      &quot;Труд&quot;: 260.0
+    },
+    &quot;utilisation_pct&quot;: {
+      &quot;Сырьё&quot;: 99.4,
+      &quot;Энергия&quot;: 91.19047619047619,
+      &quot;Труд&quot;: 100.0
+    },
+    &quot;shadow_prices&quot;: {
+      &quot;Сырьё&quot;: 2.529411764705883,
+      &quot;Энергия&quot;: 0.0,
+      &quot;Труд&quot;: 9.352941176470587
+    },
+    &quot;binding&quot;: [
+      &quot;Труд&quot;
+    ],
+    &quot;integer&quot;: true,
+    &quot;pareto&quot;: [
+      [
+        220.0,
+        20.0
+      ],
+      [
+        1210.0,
+        110.0
+      ],
+      [
+        2208.0,
+        201.0
+      ],
+      [
+        3014.0,
+        292.0
+      ],
+      [
+        3783.0,
+        383.0
+      ]
+    ]
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 1,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M10&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

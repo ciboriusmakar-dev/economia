@@ -1,0 +1,68 @@
+{
+ "dataset_id": "DEMO-M05",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "period": 2022,
+   "group": "Завод А",
+   "output": 1000,
+   "materials": 5000.0,
+   "energy": 1000.0,
+   "labour": 2500.0,
+   "depreciation": 600,
+   "other": 400
+  },
+  {
+   "period": 2023,
+   "group": "Завод А",
+   "output": 1100,
+   "materials": 5940.0,
+   "energy": 1540.0,
+   "labour": 2860.0,
+   "depreciation": 640,
+   "other": 420
+  },
+  {
+   "period": 2024,
+   "group": "Завод А",
+   "output": 1150,
+   "materials": 6325.0,
+   "energy": 1955.0,
+   "labour": 3105.0,
+   "depreciation": 650,
+   "other": 430
+  },
+  {
+   "period": 2022,
+   "group": "Завод Б",
+   "output": 800,
+   "materials": 4160.0,
+   "energy": 720.0,
+   "labour": 2400.0,
+   "depreciation": 700,
+   "other": 380
+  },
+  {
+   "period": 2023,
+   "group": "Завод Б",
+   "output": 820,
+   "materials": 4346.0,
+   "energy": 984.0,
+   "labour": 2542.0,
+   "depreciation": 710,
+   "other": 390
+  },
+  {
+   "period": 2024,
+   "group": "Завод Б",
+   "output": 850,
+   "materials": 4675.0,
+   "energy": 1275.0,
+   "labour": 2635.0,
+   "depreciation": 720,
+   "other": 400
+  }
+ ]
+}

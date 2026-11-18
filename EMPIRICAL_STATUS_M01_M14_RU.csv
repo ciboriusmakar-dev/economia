@@ -1,0 +1,15 @@
+module,current_status,real_data_status,external_reference_status,blocking_reason,next_required_action
+M01,PARTIAL_PILOT,limited manually transcribed pilot,NOT_INDEPENDENTLY_REPRODUCED,No full PRODCOM-Comext bridge and no source originals in package,Supply official PRODCOM Comext and concordance originals then reconcile
+M02,NOT_TESTABLE,not enough validated real series,NOT_TESTABLE,No justified valid excluded instruments,Supply matched monthly market series and documented instrument design
+M03,NOT_TESTABLE,not enough matched real price-volume series,NOT_TESTABLE,No product-level matched price and quantity panel,Supply harmonized prices quantities and sales
+M04,PARTIAL_PILOT,6-sector one-year exploratory extract,NOT_INDEPENDENTLY_REPRODUCED,No capital stock panel; very small sample; no full deflation,Supply multi-year STAN capital labour output and deflators
+M05,PARTIAL_PILOT,6-sector descriptive extract,NOT_INDEPENDENTLY_REPRODUCED,Not a complete product/firm cost structure,Supply full IOT value-added and cost components
+M06,PARTIAL_PILOT,3x3 supply-use fragment,NOT_INDEPENDENTLY_REPRODUCED,Not a symmetric complete IOT; Leontief inverse not validated,Supply complete consistent IOT tables and published benchmark inverse
+M07,NOT_TESTABLE,limited GDP series only,NOT_TESTABLE,Insufficient explanatory variables and independent holdout,Supply real GDP capital labour prices energy and controls
+M08,NOT_TESTABLE,no selected quasi-experiment,NOT_TESTABLE,No treatment/control case and event timing,Select policy/event and provide panel with pre/post periods
+M09,PARTIAL_PILOT,10 annual nominal USD GDP observations,NOT_INDEPENDENTLY_REPRODUCED,Nominal USD GDP not a real activity measure; short series,Supply long real GDP and relevant macro series plus rolling holdout
+M10,NOT_TESTABLE,no process-specific technology data,NOT_TESTABLE,Energy balances do not define production coefficients/capacity,Supply process coefficients costs capacities and constraints
+M11,NOT_TESTABLE,no harmonized multi-market product panel,NOT_TESTABLE,Product codes and market denominators not reconciled,Supply product-level price volume trade and concordances
+M12,NOT_TESTABLE,no enterprise inventory transactions,NOT_TESTABLE,Macro inventory aggregates cannot test warehouse control,Supply opening/closing stock receipts sales orders lead times and costs
+M13,NOT_TESTABLE,no route network topology/capacities,NOT_TESTABLE,Aggregate freight data do not provide a network graph,Supply nodes edges capacities costs travel times and shipment flows
+M14,NOT_TESTABLE,no realized risk-loss panel,NOT_TESTABLE,No aligned exposures risk drivers and realized outcomes,Supply historical losses events exposures and stress definitions

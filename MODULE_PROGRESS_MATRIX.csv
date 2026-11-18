@@ -1,0 +1,15 @@
+﻿model_id;name;code_status;synthetic_tests;full_real_data_status;independent_validation;limitations
+M01;Баланс товарного рынка;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Не является полным физическим балансом без запасов, потерь и промежуточного использования.
+M02;Спрос и предложение / IV;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Причинная интерпретация только при защищаемых ограничениях исключения и достаточной силе инструментов.
+M03;Ценовая эластичность;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Наблюдательная оценка без идентификации эндогенности цены.
+M04;Производственная функция;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Чувствительна к измерению капитала, дефляторам, выборке отраслей и эндогенности факторов.
+M05;Структура издержек;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Компоненты должны совпадать по году, оценке, классификации и ценовой базе.
+M06;Межотраслевой баланс Леонтьева;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Требуются полная согласованная внутренняя матрица и независимое сравнение с опубликованными величинами.
+M07;Регрессионная оценка;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;"Ассоциация не равна причинности; проверять спецификацию, выбросы и устойчивость."
+M08;Разность разностей;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Необходимы параллельные тренды, отсутствие предвосхищения и иных нарушений дизайна.
+M09;Временные ряды и прогнозирование;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;"Простые базовые линии; интервалы и структурная динамика не моделируются."
+M10;Оптимизация ресурсов;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Оптимум условен на реалистичности коэффициентов и ограничений.
+M11;Взаимосвязанные рынки;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;"Линейная статическая модель; не учитывает динамику, ожидания и стратегическое поведение."
+M12;Запасы и потоковый баланс;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;"Фиксированный срок поставки; нет порчи, стохастических задержек и ограничений поставщика."
+M13;Логистика и сетевые потоки;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Нет маршрутизации по стоимости/времени, расписаний и многотоварных ограничений.
+M14;Неопределённость и риск;IMPLEMENTED;AUTOMATED_TESTS_PASS;NOT_CONFIRMED_FULL_DATA;NOT_DONE;Историческая выборка не гарантирует оценку редких хвостовых событий.

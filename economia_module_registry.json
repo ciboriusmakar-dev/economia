@@ -1,0 +1,172 @@
+{
+  "platform": "ECONOMIA",
+  "version": "1.9.5",
+  "data_modes": [
+    "real",
+    "simulation"
+  ],
+  "shared_contract": {
+    "dataset_required": [
+      "dataset_id",
+      "source_id",
+      "records",
+      "origin",
+      "data_mode"
+    ],
+    "origin_values": [
+      "observed",
+      "synthetic",
+      "scenario",
+      "derived",
+      "forecast",
+      "estimate"
+    ],
+    "result_required": [
+      "model_id",
+      "model_version",
+      "status",
+      "mode",
+      "inputs_hash",
+      "outputs",
+      "diagnostics",
+      "warnings",
+      "errors",
+      "started_at",
+      "completed_at"
+    ],
+    "missing_values": "Не заполняются молча. Каждая модель либо отклоняет критический пропуск, либо сохраняет его как отдельный статус/предупреждение.",
+    "provenance": "Источник, версия, дата получения, лицензия, атрибуция, контрольная сумма и флаги качества должны быть сохранены.",
+    "data_mode_values": [
+      "real",
+      "simulation"
+    ]
+  },
+  "models": [
+    {
+      "id": "M01",
+      "name": "Анализ товаров и товарных балансов",
+      "status": "implemented",
+      "empirical": "not_confirmed_full_data",
+      "input": "PRODCOM production/import/export, country/year/product/unit/flags",
+      "output": "apparent consumption; incomplete groups; flags",
+      "limitations": "Не является полным физическим балансом без запасов, потерь и промежуточного использования."
+    },
+    {
+      "id": "M02",
+      "name": "Анализ спроса и рыночной активности",
+      "status": "implemented",
+      "empirical": "not_confirmed_instruments",
+      "input": "Monthly price/quantity and excluded demand/supply shifters",
+      "output": "IV slopes; first-stage diagnostic",
+      "limitations": "Причинная интерпретация только при защищаемых ограничениях исключения и достаточной силе инструментов."
+    },
+    {
+      "id": "M03",
+      "name": "Анализ цен",
+      "status": "implemented",
+      "empirical": "not_confirmed_full_series",
+      "input": "Monthly price and quantity indices",
+      "output": "Log-log elasticity, HAC standard error, interval",
+      "limitations": "Наблюдательная оценка без идентификации эндогенности цены."
+    },
+    {
+      "id": "M04",
+      "name": "Анализ производительности",
+      "status": "implemented",
+      "empirical": "not_confirmed_full_STAN",
+      "input": "Value added, real capital stock, labour, industry/year",
+      "output": "Capital/labour elasticities, returns to scale, clustered SE",
+      "limitations": "Чувствительна к измерению капитала, дефляторам, выборке отраслей и эндогенности факторов."
+    },
+    {
+      "id": "M05",
+      "name": "Анализ себестоимости и затрат",
+      "status": "implemented",
+      "empirical": "not_confirmed_full_IOT",
+      "input": "Output, intermediate consumption, compensation, fixed capital consumption, surplus, taxes",
+      "output": "Cost shares and reconciliation residual",
+      "limitations": "Компоненты должны совпадать по году, оценке, классификации и ценовой базе."
+    },
+    {
+      "id": "M06",
+      "name": "Межотраслевой анализ",
+      "status": "implemented",
+      "empirical": "not_confirmed_full_IOT",
+      "input": "Domestic Z, gross output x, domestic final demand y",
+      "output": "A, Leontief inverse, reconstructed output, spectral radius and condition number",
+      "limitations": "Требуются полная согласованная внутренняя матрица и независимое сравнение с опубликованными величинами."
+    },
+    {
+      "id": "M07",
+      "name": "Макроэкономический анализ",
+      "status": "implemented",
+      "empirical": "not_confirmed",
+      "input": "Numeric outcome and regressors",
+      "output": "OLS coefficients, IID and HC3 SE, t statistics, R2",
+      "limitations": "Ассоциация не равна причинности; проверять спецификацию, выбросы и устойчивость."
+    },
+    {
+      "id": "M08",
+      "name": "Причинный анализ",
+      "status": "implemented",
+      "empirical": "not_confirmed_case_selection",
+      "input": "Outcome, treated, post, optional cluster",
+      "output": "DiD estimate, standard error, confidence interval and identification checklist",
+      "limitations": "Необходимы параллельные тренды, отсутствие предвосхищения и иных нарушений дизайна."
+    },
+    {
+      "id": "M09",
+      "name": "Прогнозирование",
+      "status": "implemented_baselines",
+      "empirical": "partial_pilot_only",
+      "input": "Ordered time series",
+      "output": "Rolling-origin comparison of naive, drift and seasonal-naive baselines",
+      "limitations": "Простые базовые линии; интервалы и структурная динамика не моделируются."
+    },
+    {
+      "id": "M10",
+      "name": "Оптимизация производства",
+      "status": "implemented",
+      "empirical": "not_confirmed_constraints",
+      "input": "Objective vector, inequality/equality constraints, bounds",
+      "output": "Optimal allocation, objective, slacks, dual marginals",
+      "limitations": "Оптимум условен на реалистичности коэффициентов и ограничений."
+    },
+    {
+      "id": "M11",
+      "name": "Анализ нескольких рынков",
+      "status": "implemented_linear_equilibrium",
+      "empirical": "not_confirmed",
+      "input": "Linear demand/supply intercepts and cross-price matrices",
+      "output": "Equilibrium prices, quantities, clearing residual, condition number",
+      "limitations": "Линейная статическая модель; не учитывает динамику, ожидания и стратегическое поведение."
+    },
+    {
+      "id": "M12",
+      "name": "Управление запасами",
+      "status": "implemented_with_lead_time",
+      "empirical": "not_confirmed_firm_microdata",
+      "input": "Production, demand, initial stock, reorder point, order quantity and lead time",
+      "output": "Inventory path, unmet demand, orders in transit",
+      "limitations": "Фиксированный срок поставки; нет порчи, стохастических задержек и ограничений поставщика."
+    },
+    {
+      "id": "M13",
+      "name": "Логистика и транспортные потоки",
+      "status": "implemented_max_flow",
+      "empirical": "not_confirmed_network_data",
+      "input": "Directed edges, capacities, source and sink",
+      "output": "Maximum flow and edge allocations",
+      "limitations": "Нет маршрутизации по стоимости/времени, расписаний и многотоварных ограничений."
+    },
+    {
+      "id": "M14",
+      "name": "Экономические риски",
+      "status": "implemented_empirical_distribution",
+      "empirical": "not_confirmed_full_series",
+      "input": "Observed/scenario values and optional probability weights",
+      "output": "Mean, standard deviation, upper-tail quantile and expected shortfall",
+      "limitations": "Историческая выборка не гарантирует оценку редких хвостовых событий."
+    }
+  ]
+}

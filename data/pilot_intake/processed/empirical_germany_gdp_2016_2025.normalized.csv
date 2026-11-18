@@ -1,0 +1,11 @@
+﻿year,gdp_current_usd,country,indicator,source,status,price_basis,currency,license
+2016,3536787895179.0,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2017,3765351626105.9,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2018,4055433215302.0,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2019,3959894794039.2,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2020,3941398957073.9,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2021,4355251953410.8,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2022,4201021706478.6,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2023,4562207532490.3,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2024,4685592577804.7,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0
+2025,5050922925047.1,DEU,NY.GDP.MKTP.CD,World Bank WDI,fact,current_prices,USD,CC BY 4.0

@@ -1,0 +1,7 @@
+nace,sector,enterprises,persons_employed,turnover_eur_mn,gva_factor_cost_eur_mn,gross_investment_eur_mn,staff_expenditure_eur_mn,year,staff_cost_per_person_eur,staff_cost_share_turnover,gva_share_turnover,turnover_per_person_eur
+B,Mining and quarrying,1553,36596,14681,4884,910,2256,2023,61646.08,0.15366801,0.33267489,401164.06
+C,Manufacturing,201177,8161765,2892455,774039,89744,534465,2023,65484.0,0.18477902,0.26760624,354390.87
+D,"Electricity, gas, steam and air conditioning supply",74086,424508,1251390,114828,32758,28536,2023,67221.35,0.02280344,0.09176036,2947859.64
+E,"Water supply; sewerage, waste management and remediation",9749,303112,86523,33446,10249,17151,2023,56583.05,0.19822475,0.38655618,285448.94
+F,Construction,379286,2622799,415425,167079,15426,109072,2023,41586.11,0.26255521,0.40218812,158389.95
+G,Wholesale and retail trade; repair of motor vehicles,542802,6280269,2492802,404556,44938,235802,2023,37546.48,0.09459315,0.16228966,396925.99

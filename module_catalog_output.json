@@ -1,0 +1,100 @@
+[
+  {
+    "model_id": "M01",
+    "name": "Баланс товарного рынка / кажущееся потребление",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M02",
+    "name": "Спрос и предложение / инструментальная оценка",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M03",
+    "name": "Ценовая эластичность",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M04",
+    "name": "Производственная функция",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M05",
+    "name": "Структура издержек",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M06",
+    "name": "Межотраслевой баланс Леонтьева",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M07",
+    "name": "Регрессионная оценка",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M08",
+    "name": "Разность разностей",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M09",
+    "name": "Временные ряды и прогнозирование",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M10",
+    "name": "Оптимизация ресурсов",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M11",
+    "name": "Взаимосвязанные рынки",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M12",
+    "name": "Запасы и потоковый баланс",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M13",
+    "name": "Логистика и сетевые потоки",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  },
+  {
+    "model_id": "M14",
+    "name": "Неопределённость и риск",
+    "version": "1.9.5",
+    "interface": "dataset.records + parameters",
+    "status": "implemented; empirical status depends on source data"
+  }
+]

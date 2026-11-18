@@ -1,0 +1,99 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Макроэкономический анализ — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Макроэкономический анализ</h1><div class="id">Модуль M07</div><span class="badge ok">Расчёт выполнен</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M07; происхождение synthetic; записей 10; SHA-256 входа 094b99f1575faf55dc5ed995912c3ff17781f713196952c25a998fa24a4f48e7. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Реальный ВВП в 2024 вырос на 1,5 % (за период с 2015: 21,1 %).</li><li>Дефлятор ВВП (общий рост цен) в 2024: 3,0 %. Номинальный рост 4,6 % складывается из реального роста и роста цен.</li><li>Выпуск на одного занятого: 28,96.</li></ul></div><div class="card"><h2>Реальный рост ВВП, % к предыдущему периоду</h2><svg viewBox="0 0 720 308" width="100%" role="img" aria-label="Реальный рост ВВП, % к предыдущему периоду"><line x1="230.0" x2="230.0" y1="10" y2="288" class="axis"/><text x="222" y="32" text-anchor="end">2016</text><rect x="230.0" y="19" width="341.6" height="18" rx="2" class="barpos"><title>2016: 2,96</title></rect><text x="577.6" y="32" text-anchor="start">2,96</text><text x="222" y="62" text-anchor="end">2017</text><rect x="230.0" y="49" width="249.9" height="18" rx="2" class="barpos"><title>2017: 2,17</title></rect><text x="485.9" y="62" text-anchor="start">2,17</text><text x="222" y="92" text-anchor="end">2018</text><rect x="230.0" y="79" width="152.5" height="18" rx="2" class="barpos"><title>2018: 1,32</title></rect><text x="388.5" y="92" text-anchor="start">1,32</text><text x="222" y="122" text-anchor="end">2019</text><rect x="230.0" y="109" width="137.5" height="18" rx="2" class="barpos"><title>2019: 1,19</title></rect><text x="373.5" y="122" text-anchor="start">1,19</text><text x="222" y="152" text-anchor="end">2020</text><rect x="230.0" y="139" width="218.3" height="18" rx="2" class="barpos"><title>2020: 1,89</title></rect><text x="454.3" y="152" text-anchor="start">1,89</text><text x="222" y="182" text-anchor="end">2021</text><rect x="230.0" y="169" width="322.4" height="18" rx="2" class="barpos"><title>2021: 2,79</title></rect><text x="558.4" y="182" text-anchor="start">2,79</text><text x="222" y="212" text-anchor="end">2022</text><rect x="230.0" y="199" width="353.4" height="18" rx="2" class="barpos"><title>2022: 3,06</title></rect><text x="589.4" y="212" text-anchor="start">3,06</text><text x="222" y="242" text-anchor="end">2023</text><rect x="230.0" y="229" width="281.5" height="18" rx="2" class="barpos"><title>2023: 2,44</title></rect><text x="517.5" y="242" text-anchor="start">2,44</text><text x="222" y="272" text-anchor="end">2024</text><rect x="230.0" y="259" width="174.2" height="18" rx="2" class="barpos"><title>2024: 1,51</title></rect><text x="410.2" y="272" text-anchor="start">1,51</text></svg></div><div class="card"><h2>Основные показатели</h2><table><thead><tr><th class=l>Период</th><th>Реальный ВВП</th><th>Номинальный ВВП</th><th>Реальный рост, %</th><th>Рост цен (дефлятор), %</th></tr></thead><tbody><tr><td class=l>2015</td><td>1 000</td><td>1 000</td><td>—</td><td>—</td></tr><tr><td class=l>2016</td><td>1 030</td><td>1 060</td><td>2,96</td><td>3,00</td></tr><tr><td class=l>2017</td><td>1 052</td><td>1 116</td><td>2,17</td><td>3,00</td></tr><tr><td class=l>2018</td><td>1 066</td><td>1 165</td><td>1,32</td><td>2,99</td></tr><tr><td class=l>2019</td><td>1 078</td><td>1 214</td><td>1,19</td><td>3,01</td></tr><tr><td class=l>2020</td><td>1 099</td><td>1 274</td><td>1,89</td><td>2,99</td></tr><tr><td class=l>2021</td><td>1 130</td><td>1 349</td><td>2,79</td><td>3,00</td></tr><tr><td class=l>2022</td><td>1 164</td><td>1 432</td><td>3,06</td><td>3,00</td></tr><tr><td class=l>2023</td><td>1 193</td><td>1 511</td><td>2,44</td><td>3,00</td></tr><tr><td class=l>2024</td><td>1 211</td><td>1 580</td><td>1,51</td><td>3,01</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Особых замечаний нет.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 094b99f1575faf55dc5ed995912c3ff17781f713196952c25a998fa24a4f48e7</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;periods&quot;: [
+      &quot;2015&quot;,
+      &quot;2016&quot;,
+      &quot;2017&quot;,
+      &quot;2018&quot;,
+      &quot;2019&quot;,
+      &quot;2020&quot;,
+      &quot;2021&quot;,
+      &quot;2022&quot;,
+      &quot;2023&quot;,
+      &quot;2024&quot;
+    ],
+    &quot;real_growth_pct&quot;: [
+      null,
+      2.959999999999985,
+      2.1658896658896865,
+      1.3214183857781059,
+      1.1915931694501891,
+      1.8915159944367321,
+      2.793702793702768,
+      3.0630311614731065,
+      2.4394433946057337,
+      1.5093073956062408
+    ],
+    &quot;nominal_growth_pct&quot;: [
+      null,
+      6.05,
+      5.233380480905225,
+      4.354838709677411,
+      4.233213120384693,
+      4.942746519482655,
+      5.879582384802573,
+      6.153618030842223,
+      5.510546165665597,
+      4.560799629310908
+    ],
+    &quot;gdp_deflator&quot;: [
+      100.0,
+      103.00116550116552,
+      106.09373514592642,
+      109.27003190091949,
+      112.55447380621233,
+      115.92501592501591,
+      119.40509915014165,
+      122.98574128156675,
+      126.67281569679693,
+      130.48075334544853
+    ],
+    &quot;deflator_inflation_pct&quot;: [
+      null,
+      3.0011655011655147,
+      3.0024608262572583,
+      2.993858921664172,
+      3.0058030076087094,
+      2.9945874249358795,
+      3.002012289889855,
+      2.99873469132399,
+      2.9979690139761095,
+      3.006120632674847
+    ],
+    &quot;labour_productivity&quot;: [
+      25.0,
+      25.61194029850746,
+      26.03712871287129,
+      26.251231527093594,
+      26.433823529411768,
+      26.802439024390246,
+      27.417475728155335,
+      28.120772946859905,
+      28.668269230769226,
+      28.961722488038276
+    ]
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 10,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M07&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

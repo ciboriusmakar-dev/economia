@@ -1,0 +1,128 @@
+{
+ "dataset_id": "DEMO-M12",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "period": "2019-01",
+   "demand": 108,
+   "stock": 220
+  },
+  {
+   "period": "2019-02",
+   "demand": 109,
+   "stock": 239
+  },
+  {
+   "period": "2019-03",
+   "demand": 110,
+   "stock": 254
+  },
+  {
+   "period": "2019-04",
+   "demand": 110,
+   "stock": 260
+  },
+  {
+   "period": "2019-05",
+   "demand": 84,
+   "stock": 256
+  },
+  {
+   "period": "2019-06",
+   "demand": 82,
+   "stock": 244
+  },
+  {
+   "period": "2019-07",
+   "demand": 104,
+   "stock": 226
+  },
+  {
+   "period": "2019-08",
+   "demand": 106,
+   "stock": 206
+  },
+  {
+   "period": "2019-09",
+   "demand": 111,
+   "stock": 190
+  },
+  {
+   "period": "2019-10",
+   "demand": 114,
+   "stock": 181
+  },
+  {
+   "period": "2019-11",
+   "demand": 87,
+   "stock": 182
+  },
+  {
+   "period": "2019-12",
+   "demand": 81,
+   "stock": 192
+  },
+  {
+   "period": "2020-01",
+   "demand": 100,
+   "stock": 209
+  },
+  {
+   "period": "2020-02",
+   "demand": 102,
+   "stock": 229
+  },
+  {
+   "period": "2020-03",
+   "demand": 111,
+   "stock": 246
+  },
+  {
+   "period": "2020-04",
+   "demand": 118,
+   "stock": 258
+  },
+  {
+   "period": "2020-05",
+   "demand": 91,
+   "stock": 260
+  },
+  {
+   "period": "2020-06",
+   "demand": 82,
+   "stock": 252
+  },
+  {
+   "period": "2020-07",
+   "demand": 97,
+   "stock": 236
+  },
+  {
+   "period": "2020-08",
+   "demand": 98,
+   "stock": 217
+  },
+  {
+   "period": "2020-09",
+   "demand": 110,
+   "stock": 198
+  },
+  {
+   "period": "2020-10",
+   "demand": 120,
+   "stock": 185
+  },
+  {
+   "period": "2020-11",
+   "demand": 95,
+   "stock": 180
+  },
+  {
+   "period": "2020-12",
+   "demand": 84,
+   "stock": 185
+  }
+ ]
+}

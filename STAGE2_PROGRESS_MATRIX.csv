@@ -1,0 +1,7 @@
+model,source_selected,downloader_ready,full_real_data_downloaded,model_pipeline_ready,real_empirical_test,independent_external_reproduction
+M01,yes,yes,no,yes,no,no
+M02,yes,yes,no,yes,no,no
+M03,yes,yes,no,yes,no,no
+M04,yes,yes,no,yes,no,no
+M05,yes,yes,no,yes,no,no
+M06,yes,yes,no,yes,no,no

@@ -1,0 +1,47 @@
+{
+ "dataset_id": "DEMO-M10",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "products": [
+    {
+     "name": "Кирпич",
+     "profit": 30,
+     "uses": {
+      "Сырьё": 4,
+      "Энергия": 3,
+      "Труд": 2
+     },
+     "max": 80
+    },
+    {
+     "name": "Плитка",
+     "profit": 45,
+     "uses": {
+      "Сырьё": 3,
+      "Энергия": 5,
+      "Труд": 4
+     },
+     "max": 70
+    },
+    {
+     "name": "Блоки",
+     "profit": 22,
+     "uses": {
+      "Сырьё": 5,
+      "Энергия": 2,
+      "Труд": 1
+     },
+     "min": 10
+    }
+   ],
+   "resources": {
+    "Сырьё": 500,
+    "Энергия": 420,
+    "Труд": 260
+   }
+  }
+ ]
+}

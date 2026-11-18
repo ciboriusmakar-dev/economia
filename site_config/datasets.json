@@ -1,0 +1,104 @@
+{
+ "base_url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/{id}?format=TSV&compressed=true",
+ "licence_note": "Eurostat: повторное использование с указанием источника (политика Eurostat; условия проверять на дату использования).",
+ "datasets": [
+  {
+   "id": "nama_10_gdp",
+   "title": "ВВП и компоненты, годовые",
+   "modules": [
+    "M07"
+   ],
+   "source": "eurostat"
+  },
+  {
+   "id": "une_rt_m",
+   "title": "Безработица, месячные",
+   "modules": [
+    "M09"
+   ],
+   "source": "eurostat"
+  },
+  {
+   "id": "sts_inpr_m",
+   "title": "Промышленное производство, месячные",
+   "modules": [
+    "M09"
+   ],
+   "source": "eurostat"
+  },
+  {
+   "id": "prc_hicp_midx",
+   "title": "Потребительские цены (HICP), индекс",
+   "modules": [
+    "M03",
+    "M02"
+   ],
+   "source": "eurostat"
+  },
+  {
+   "id": "sts_trtu_m",
+   "title": "Розничная торговля, месячные",
+   "modules": [
+    "M02"
+   ],
+   "source": "eurostat"
+  },
+  {
+   "id": "nrg_bal_c",
+   "title": "Энергобалансы",
+   "modules": [
+    "M01"
+   ],
+   "source": "eurostat"
+  },
+  {
+   "id": "wdi_NY.GDP.MKTP.KD",
+   "title": "Всемирный банк WDI: ВВП, постоянные цены (США$)",
+   "modules": [
+    "M07",
+    "M03"
+   ],
+   "source": "worldbank",
+   "indicator": "NY.GDP.MKTP.KD"
+  },
+  {
+   "id": "wdi_NY.GDP.MKTP.CD",
+   "title": "Всемирный банк WDI: ВВП, текущие цены (США$)",
+   "modules": [
+    "M07",
+    "M03"
+   ],
+   "source": "worldbank",
+   "indicator": "NY.GDP.MKTP.CD"
+  },
+  {
+   "id": "wdi_FP.CPI.TOTL.ZG",
+   "title": "Всемирный банк WDI: Инфляция, ИПЦ (% в год)",
+   "modules": [
+    "M07",
+    "M03"
+   ],
+   "source": "worldbank",
+   "indicator": "FP.CPI.TOTL.ZG"
+  }
+ ],
+ "wb_url": "https://api.worldbank.org/v2/country/DEU;FRA/indicator/{indicator}?format=json&per_page=20000&date=2000:2025",
+ "sources": {
+  "eurostat": {
+   "name": "Eurostat",
+   "licence": "Свободное повторное использование (в т.ч. коммерческое) с указанием источника; изменения данных нужно обозначать; данные стран вне ЕС, ЕАСТ и кандидатов — только некоммерческое использование.",
+   "terms_url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+   "attribution": "Источник: Eurostat, {title}, https://ec.europa.eu/eurostat/databrowser/view/{id}/default/table, дата доступа {date}. Данные обработаны ECONOMIA (пересчёт показателей, отбор стран и лет)."
+  },
+  "worldbank": {
+   "name": "Всемирный банк",
+   "licence": "CC BY 4.0 (если у набора не указано иное; часть показателей принадлежит сторонним поставщикам и может иметь другие условия — смотрите метаданные показателя); нельзя подразумевать одобрение Всемирным банком.",
+   "terms_url": "https://www.worldbank.org/ext/en/legal/terms-conditions/datasets",
+   "attribution": "The World Bank: World Development Indicators: {title} ({indicator}), дата доступа {date}. Данные обработаны ECONOMIA."
+  }
+ },
+ "licence_checked": "2026-11-17",
+ "exclude_countries": [
+  "UK"
+ ]
+}

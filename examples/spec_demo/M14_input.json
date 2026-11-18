@@ -1,0 +1,32 @@
+{
+ "dataset_id": "DEMO-M14",
+ "source_id": "demo-synthetic",
+ "origin": "synthetic",
+ "data_mode": "simulation",
+ "records": [
+  {
+   "name": "Выручка",
+   "type": "revenue",
+   "amount": 1000,
+   "factor": "demand"
+  },
+  {
+   "name": "Энергия",
+   "type": "cost",
+   "amount": 150,
+   "factor": "energy"
+  },
+  {
+   "name": "Импортное сырьё",
+   "type": "cost",
+   "amount": 300,
+   "factor": "usd",
+   "pass_through": 0.8
+  },
+  {
+   "name": "Зарплата",
+   "type": "cost",
+   "amount": 250
+  }
+ ]
+}

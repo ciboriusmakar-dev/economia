@@ -1,0 +1,41 @@
+{
+  "model_id": "M07",
+  "model_version": "1.8.7",
+  "status": "COMPLETED",
+  "mode": "simulation",
+  "inputs_hash": "babc1e63026a6bc8ae3e53a6a58a37e77e273f084365a268ed177ff175070d0d",
+  "outputs": {
+    "n": 6,
+    "coefficients": [
+      0.999999999999995,
+      3.0000000000000018
+    ],
+    "standard_errors_iid": [
+      4.139410132553678e-15,
+      1.0629023994194013e-15
+    ],
+    "standard_errors_hc3": [
+      6.747994595508526e-15,
+      2.3771351437030136e-15
+    ],
+    "t_statistics_hc3": [
+      148192175593263.84,
+      1262023325828548.5
+    ],
+    "r_squared": 1.0,
+    "residual_std": 4.446439748506845e-15,
+    "rank": 2,
+    "dof": 4,
+    "interpretation": "Ассоциативная регрессия; HC3-ошибки устойчивы к гетероскедастичности, причинность не установлена"
+  },
+  "diagnostics": {
+    "input_record_count": 6,
+    "dataset_origin": "synthetic",
+    "dataset_id": "demo-regression-001"
+  },
+  "warnings": [],
+  "errors": [],
+  "started_at": "2026-11-14T19:24:19.682998+00:00",
+  "completed_at": "2026-11-14T19:24:19.683734+00:00",
+  "run_id": "12b9a492-4545-41cf-a967-78ba5fa6340a"
+}

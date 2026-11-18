@@ -1,0 +1,6 @@
+year,production_mt,imports_mt,exports_mt,domestic_consumption_mt,supply_mt,identified_uses_mt,unexplained_balance_item_mt,balance_identity_pass
+2021,34.966,1.116,6.749,29.167,36.082,35.916,0.166,True
+2022,32.901,1.02,6.25,28.039,33.921,34.289,-0.368,True
+2023,28.394,0.712,5.106,23.236,29.106,28.342,0.764,True
+2024,26.809,0.673,5.191,21.368,27.482,26.559,0.923,True
+2025,27.462,0.852,5.374,21.712,28.314,27.086,1.228,True

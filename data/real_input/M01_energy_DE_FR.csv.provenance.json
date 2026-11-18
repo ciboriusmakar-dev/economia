@@ -1,0 +1,12 @@
+{
+ "source_file": "nrg_bal_c.tsv.gz",
+ "source_sha256": "04711621282936fa0d8f42e6d952fc8f3f1dbe17800334d2a9cb9a98096d5431",
+ "dataset": "eurostat nrg_bal_c",
+ "rows_out": 1122,
+ "missing_skipped": 102,
+ "countries": [
+  "DE",
+  "FR"
+ ],
+ "from_year": 2008
+}

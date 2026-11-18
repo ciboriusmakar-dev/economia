@@ -1,0 +1,98 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Анализ себестоимости и затрат — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Анализ себестоимости и затрат</h1><div class="id">Модуль M05</div><span class="badge warn">Расчёт выполнен, есть предупреждения</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M05; происхождение synthetic; записей 6; SHA-256 входа 92ff265ac1b2e5bf5c75142509bf144553a6934561632348abb94e453c7e5e49. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>«Завод А»: себестоимость единицы 2022 → 2024: 9,50 → 10,84 (14,1 %); сильнее всего на это повлияла статья «Энергия» (+0,70 на единицу).</li><li>«Завод А»: крупнейшая статья на 2024: «Материалы» (50,7 % затрат).</li><li>«Завод Б»: себестоимость единицы 2022 → 2024: 10,45 → 11,42 (9,3 %); сильнее всего на это повлияла статья «Энергия» (+0,60 на единицу).</li><li>«Завод Б»: крупнейшая статья на 2024: «Материалы» (48,2 % затрат).</li><li>Сравнение: дешевле всего единица у «Завод А» (10,84), дороже всего у «Завод Б» (11,42).</li></ul></div><div class="card"><h2>Вклад статей в изменение себестоимости единицы (2022 → 2024), Завод А</h2><svg viewBox="0 0 720 188" width="100%" role="img" aria-label="Вклад статей в изменение себестоимости единицы (2022 → 2024), Завод А"><line x1="294.4" x2="294.4" y1="10" y2="168" class="axis"/><text x="222" y="32" text-anchor="end">Материалы</text><rect x="294.4" y="19" width="211.4" height="18" rx="2" class="barpos"><title>Материалы: 0,50</title></rect><text x="511.8" y="32" text-anchor="start">0,50</text><text x="222" y="62" text-anchor="end">Энергия</text><rect x="294.4" y="49" width="295.9" height="18" rx="2" class="barpos"><title>Энергия: 0,70</title></rect><text x="596.3" y="62" text-anchor="start">0,70</text><text x="222" y="92" text-anchor="end">Оплата труда</text><rect x="294.4" y="79" width="84.5" height="18" rx="2" class="barpos"><title>Оплата труда: 0,20</title></rect><text x="384.9" y="92" text-anchor="start">0,20</text><text x="222" y="122" text-anchor="end">Амортизация</text><rect x="279.7" y="109" width="14.7" height="18" rx="2" class="barneg"><title>Амортизация: -0,03</title></rect><text x="273.7" y="122" text-anchor="end">-0,03</text><text x="222" y="152" text-anchor="end">Прочие затраты</text><rect x="283.4" y="139" width="11.0" height="18" rx="2" class="barneg"><title>Прочие затраты: -0,03</title></rect><text x="277.4" y="152" text-anchor="end">-0,03</text></svg></div><div class="card"><h2>Структура себестоимости (последний период)</h2><table><thead><tr><th class=l>Группа</th><th class=l>Период</th><th>Выпуск</th><th>Затраты</th><th>На единицу</th><th>Материалы, %</th><th>Энергия, %</th><th>Оплата труда, %</th><th>Амортизация, %</th><th>Прочие затраты, %</th></tr></thead><tbody><tr><td class=l>Завод А</td><td class=l>2024</td><td>1 150</td><td>12 465</td><td>10,84</td><td>50,74</td><td>15,68</td><td>24,91</td><td>5,21</td><td>3,45</td></tr><tr><td class=l>Завод Б</td><td class=l>2024</td><td>850</td><td>9 705</td><td>11,42</td><td>48,17</td><td>13,14</td><td>27,15</td><td>7,42</td><td>4,12</td></tr></tbody></table></div><div class="card"><h2>Факторы изменения себестоимости единицы</h2><table><thead><tr><th class=l>Группа</th><th class=l>Статья</th><th>Изменение на единицу</th></tr></thead><tbody><tr><td class=l>Завод А</td><td class=l>Материалы</td><td>0,50</td></tr><tr><td class=l>Завод А</td><td class=l>Энергия</td><td>0,70</td></tr><tr><td class=l>Завод А</td><td class=l>Оплата труда</td><td>0,20</td></tr><tr><td class=l>Завод А</td><td class=l>Амортизация</td><td>-0,03</td></tr><tr><td class=l>Завод А</td><td class=l>Прочие затраты</td><td>-0,03</td></tr><tr><td class=l>Завод Б</td><td class=l>Материалы</td><td>0,30</td></tr><tr><td class=l>Завод Б</td><td class=l>Энергия</td><td>0,60</td></tr><tr><td class=l>Завод Б</td><td class=l>Оплата труда</td><td>0,10</td></tr><tr><td class=l>Завод Б</td><td class=l>Амортизация</td><td>-0,03</td></tr><tr><td class=l>Завод Б</td><td class=l>Прочие затраты</td><td>0,00</td></tr></tbody></table></div><div class="card"><h2>Рост затрат: за счёт объёма и за счёт себестоимости</h2><table><thead><tr><th class=l>Группа</th><th>Изменение затрат</th><th>Эффект выпуска</th><th>Эффект себестоимости</th></tr></thead><tbody><tr><td class=l>Завод А</td><td>2 965</td><td>1 425</td><td>1 540</td></tr><tr><td class=l>Завод Б</td><td>1 345</td><td>522</td><td>823</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Показатели разного типа: «Амортизация» — расчётное приближение. Не смешивайте их с бухгалтерскими данными без оговорки.</li><li>Различия в себестоимости показывают, где расходы выше, но не объясняют причины без данных о ценах ресурсов и технологиях.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 92ff265ac1b2e5bf5c75142509bf144553a6934561632348abb94e453c7e5e49</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;groups&quot;: {
+      &quot;Завод А&quot;: {
+        &quot;first&quot;: &quot;2022&quot;,
+        &quot;last&quot;: &quot;2024&quot;,
+        &quot;unit_cost_first&quot;: 9.5,
+        &quot;unit_cost_last&quot;: 10.839130434782609,
+        &quot;shares_last&quot;: {
+          &quot;materials&quot;: 0.507420778178901,
+          &quot;energy&quot;: 0.156839149618933,
+          &quot;labour&quot;: 0.2490974729241877,
+          &quot;depreciation&quot;: 0.052146008824709184,
+          &quot;other&quot;: 0.03449659045326915
+        },
+        &quot;unit_items_last&quot;: {
+          &quot;materials&quot;: 5.5,
+          &quot;energy&quot;: 1.7,
+          &quot;labour&quot;: 2.7,
+          &quot;depreciation&quot;: 0.5652173913043478,
+          &quot;other&quot;: 0.3739130434782609
+        },
+        &quot;unit_cost_change&quot;: 1.339130434782609,
+        &quot;contrib&quot;: {
+          &quot;materials&quot;: 0.5,
+          &quot;energy&quot;: 0.7,
+          &quot;labour&quot;: 0.20000000000000018,
+          &quot;depreciation&quot;: -0.034782608695652195,
+          &quot;other&quot;: -0.026086956521739146
+        },
+        &quot;total_cost_change&quot;: 2965.0,
+        &quot;volume_effect&quot;: 1425.0,
+        &quot;unit_cost_effect&quot;: 1540.0000000000002
+      },
+      &quot;Завод Б&quot;: {
+        &quot;first&quot;: &quot;2022&quot;,
+        &quot;last&quot;: &quot;2024&quot;,
+        &quot;unit_cost_first&quot;: 10.45,
+        &quot;unit_cost_last&quot;: 11.41764705882353,
+        &quot;shares_last&quot;: {
+          &quot;materials&quot;: 0.4817104585265327,
+          &quot;energy&quot;: 0.13137557959814528,
+          &quot;labour&quot;: 0.2715095311695003,
+          &quot;depreciation&quot;: 0.07418856259659969,
+          &quot;other&quot;: 0.04121586810922205
+        },
+        &quot;unit_items_last&quot;: {
+          &quot;materials&quot;: 5.5,
+          &quot;energy&quot;: 1.5,
+          &quot;labour&quot;: 3.1,
+          &quot;depreciation&quot;: 0.8470588235294118,
+          &quot;other&quot;: 0.47058823529411764
+        },
+        &quot;unit_cost_change&quot;: 0.9676470588235304,
+        &quot;contrib&quot;: {
+          &quot;materials&quot;: 0.2999999999999998,
+          &quot;energy&quot;: 0.6,
+          &quot;labour&quot;: 0.10000000000000009,
+          &quot;depreciation&quot;: -0.027941176470588247,
+          &quot;other&quot;: -0.004411764705882337
+        },
+        &quot;total_cost_change&quot;: 1345.0,
+        &quot;volume_effect&quot;: 522.5,
+        &quot;unit_cost_effect&quot;: 822.5000000000009
+      }
+    },
+    &quot;kinds&quot;: {
+      &quot;Материалы&quot;: &quot;бухгалтерский показатель&quot;,
+      &quot;Энергия&quot;: &quot;бухгалтерский показатель&quot;,
+      &quot;Оплата труда&quot;: &quot;бухгалтерский показатель&quot;,
+      &quot;Амортизация&quot;: &quot;расчётное приближение&quot;,
+      &quot;Прочие затраты&quot;: &quot;бухгалтерский показатель&quot;
+    }
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 6,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M05&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

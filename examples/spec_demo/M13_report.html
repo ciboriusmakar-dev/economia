@@ -1,0 +1,139 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Логистика и транспортные потоки — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Логистика и транспортные потоки</h1><div class="id">Модуль M13</div><span class="badge ok">Расчёт выполнен</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M13; происхождение synthetic; записей 1; SHA-256 входа 8209990a5fa4f2fe1b6326d6822cb853887a6bc611a9656e18fb99451e1b8789. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Сеть: 6 узлов, 6 связей.</li><li>Кратчайший маршрут по расстоянию: Завод → Склад А → Магазин 2 (итого 210,0).</li><li>Кратчайший маршрут по времени: Завод → Склад А → Магазин 2 (итого 6,0).</li><li>Кратчайший маршрут по стоимости: Завод → Склад Б → Магазин 2 (итого 4,0).</li><li>Максимальный поток Завод → Магазин 2: 90,0. Узкие места (загружены на 100 %): Склад А→Магазин 2, Склад Б→Магазин 2.</li><li>Оптимальное распределение поставок: суммарные затраты на перевозку 405,0; задействовано 5 связей.</li></ul></div><div class="card"><h2>Загрузка связей, %</h2><svg viewBox="0 0 720 218" width="100%" role="img" aria-label="Загрузка связей, %"><line x1="230.0" x2="230.0" y1="10" y2="198" class="axis"/><text x="222" y="32" text-anchor="end">Завод→Склад А</text><rect x="230.0" y="19" width="176.7" height="18" rx="2" class="barpos"><title>Завод→Склад А: 50,0</title></rect><text x="412.7" y="32" text-anchor="start">50,0</text><text x="222" y="62" text-anchor="end">Завод→Склад Б</text><rect x="230.0" y="49" width="294.5" height="18" rx="2" class="barpos"><title>Завод→Склад Б: 83,3</title></rect><text x="530.5" y="62" text-anchor="start">83,3</text><text x="222" y="92" text-anchor="end">Склад А→Магазин 1</text><rect x="230.0" y="79" width="1.0" height="18" rx="2" class="barpos"><title>Склад А→Магазин 1: 0,0</title></rect><text x="236.0" y="92" text-anchor="start">0,0</text><text x="222" y="122" text-anchor="end">Склад А→Магазин 2</text><rect x="230.0" y="109" width="353.4" height="18" rx="2" class="barpos"><title>Склад А→Магазин 2: 100,0</title></rect><text x="589.4" y="122" text-anchor="start">100,0</text><text x="222" y="152" text-anchor="end">Склад Б→Магазин 2</text><rect x="230.0" y="139" width="353.4" height="18" rx="2" class="barpos"><title>Склад Б→Магазин 2: 100,0</title></rect><text x="589.4" y="152" text-anchor="start">100,0</text><text x="222" y="182" text-anchor="end">Склад Б→Магазин 3</text><rect x="230.0" y="169" width="1.0" height="18" rx="2" class="barpos"><title>Склад Б→Магазин 3: 0,0</title></rect><text x="236.0" y="182" text-anchor="start">0,0</text></svg></div><div class="card"><h2>Лучшие маршруты</h2><table><thead><tr><th class=l>Критерий</th><th class=l>Маршрут</th><th>Итого</th></tr></thead><tbody><tr><td class=l>расстояние</td><td class=l>Завод → Склад А → Магазин 2</td><td>210,0</td></tr><tr><td class=l>время</td><td class=l>Завод → Склад А → Магазин 2</td><td>6,0</td></tr><tr><td class=l>стоимость</td><td class=l>Завод → Склад Б → Магазин 2</td><td>4,0</td></tr></tbody></table></div><div class="card"><h2>Потоки при максимальной пропускной способности</h2><table><thead><tr><th class=l>Откуда</th><th class=l>Куда</th><th>Поток</th><th>Пропускная способность</th><th>Загрузка, %</th></tr></thead><tbody><tr><td class=l>Завод</td><td class=l>Склад А</td><td>40,00</td><td>80,00</td><td>50,0</td></tr><tr><td class=l>Завод</td><td class=l>Склад Б</td><td>50,00</td><td>60,00</td><td>83,3</td></tr><tr><td class=l>Склад А</td><td class=l>Магазин 1</td><td>0,00</td><td>50,00</td><td>0,0</td></tr><tr><td class=l>Склад А</td><td class=l>Магазин 2</td><td>40,00</td><td>40,00</td><td>100,0</td></tr><tr><td class=l>Склад Б</td><td class=l>Магазин 2</td><td>50,00</td><td>50,00</td><td>100,0</td></tr><tr><td class=l>Склад Б</td><td class=l>Магазин 3</td><td>0,00</td><td>40,00</td><td>0,0</td></tr></tbody></table></div><div class="card"><h2>Оптимальные потоки</h2><table><thead><tr><th class=l>Откуда</th><th class=l>Куда</th><th>Объём</th></tr></thead><tbody><tr><td class=l>Завод</td><td class=l>Склад А</td><td>40,00</td></tr><tr><td class=l>Завод</td><td class=l>Склад Б</td><td>60,00</td></tr><tr><td class=l>Склад А</td><td class=l>Магазин 1</td><td>40,00</td></tr><tr><td class=l>Склад Б</td><td class=l>Магазин 2</td><td>35,00</td></tr><tr><td class=l>Склад Б</td><td class=l>Магазин 3</td><td>25,00</td></tr></tbody></table></div><div class="card"><h2>Транспортные узлы</h2><table><thead><tr><th class=l>Узел</th><th>Входящих связей</th><th>Исходящих связей</th></tr></thead><tbody><tr><td class=l>Завод</td><td>0</td><td>2</td></tr><tr><td class=l>Магазин 1</td><td>1</td><td>0</td></tr><tr><td class=l>Магазин 2</td><td>2</td><td>0</td></tr><tr><td class=l>Магазин 3</td><td>1</td><td>0</td></tr><tr><td class=l>Склад А</td><td>1</td><td>2</td></tr><tr><td class=l>Склад Б</td><td>1</td><td>2</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Особых замечаний нет.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 8209990a5fa4f2fe1b6326d6822cb853887a6bc611a9656e18fb99451e1b8789</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;n_nodes&quot;: 6,
+    &quot;n_edges&quot;: 6,
+    &quot;routes&quot;: {
+      &quot;distance&quot;: {
+        &quot;total&quot;: 210.0,
+        &quot;nodes&quot;: [
+          &quot;Завод&quot;,
+          &quot;Склад А&quot;,
+          &quot;Магазин 2&quot;
+        ]
+      },
+      &quot;time&quot;: {
+        &quot;total&quot;: 6.0,
+        &quot;nodes&quot;: [
+          &quot;Завод&quot;,
+          &quot;Склад А&quot;,
+          &quot;Магазин 2&quot;
+        ]
+      },
+      &quot;cost&quot;: {
+        &quot;total&quot;: 4.0,
+        &quot;nodes&quot;: [
+          &quot;Завод&quot;,
+          &quot;Склад Б&quot;,
+          &quot;Магазин 2&quot;
+        ]
+      }
+    },
+    &quot;max_flow&quot;: 90.0,
+    &quot;saturated_edges&quot;: [
+      {
+        &quot;from&quot;: &quot;Склад А&quot;,
+        &quot;to&quot;: &quot;Магазин 2&quot;,
+        &quot;flow&quot;: 40.0,
+        &quot;capacity&quot;: 40.0
+      },
+      {
+        &quot;from&quot;: &quot;Склад Б&quot;,
+        &quot;to&quot;: &quot;Магазин 2&quot;,
+        &quot;flow&quot;: 50.0,
+        &quot;capacity&quot;: 50.0
+      }
+    ],
+    &quot;distribution&quot;: {
+      &quot;status&quot;: &quot;optimal&quot;,
+      &quot;total_cost&quot;: 405.0,
+      &quot;flows&quot;: [
+        {
+          &quot;from&quot;: &quot;Завод&quot;,
+          &quot;to&quot;: &quot;Склад А&quot;,
+          &quot;flow&quot;: 40.0
+        },
+        {
+          &quot;from&quot;: &quot;Завод&quot;,
+          &quot;to&quot;: &quot;Склад Б&quot;,
+          &quot;flow&quot;: 60.0
+        },
+        {
+          &quot;from&quot;: &quot;Склад А&quot;,
+          &quot;to&quot;: &quot;Магазин 1&quot;,
+          &quot;flow&quot;: 40.0
+        },
+        {
+          &quot;from&quot;: &quot;Склад Б&quot;,
+          &quot;to&quot;: &quot;Магазин 2&quot;,
+          &quot;flow&quot;: 35.0
+        },
+        {
+          &quot;from&quot;: &quot;Склад Б&quot;,
+          &quot;to&quot;: &quot;Магазин 3&quot;,
+          &quot;flow&quot;: 25.0
+        }
+      ]
+    },
+    &quot;nodes&quot;: {
+      &quot;Завод&quot;: {
+        &quot;in&quot;: 0,
+        &quot;out&quot;: 2,
+        &quot;in_capacity&quot;: 0,
+        &quot;out_capacity&quot;: 140.0
+      },
+      &quot;Магазин 1&quot;: {
+        &quot;in&quot;: 1,
+        &quot;out&quot;: 0,
+        &quot;in_capacity&quot;: 50.0,
+        &quot;out_capacity&quot;: 0
+      },
+      &quot;Магазин 2&quot;: {
+        &quot;in&quot;: 2,
+        &quot;out&quot;: 0,
+        &quot;in_capacity&quot;: 90.0,
+        &quot;out_capacity&quot;: 0
+      },
+      &quot;Магазин 3&quot;: {
+        &quot;in&quot;: 1,
+        &quot;out&quot;: 0,
+        &quot;in_capacity&quot;: 40.0,
+        &quot;out_capacity&quot;: 0
+      },
+      &quot;Склад А&quot;: {
+        &quot;in&quot;: 1,
+        &quot;out&quot;: 2,
+        &quot;in_capacity&quot;: 80.0,
+        &quot;out_capacity&quot;: 90.0
+      },
+      &quot;Склад Б&quot;: {
+        &quot;in&quot;: 1,
+        &quot;out&quot;: 2,
+        &quot;in_capacity&quot;: 60.0,
+        &quot;out_capacity&quot;: 90.0
+      }
+    }
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 1,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M13&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

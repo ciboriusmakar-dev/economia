@@ -1,0 +1,12 @@
+{
+  "version": "1.8.7",
+  "probe_targets": [
+    "https://ec.europa.eu/eurostat/api/dissemination/files/inventory?type=data&lang=en",
+    "https://sdmx.oecd.org/public/rest/v1/dataflow/OECD.STI.PIE/DSD_STAN@DF_STAN_2025/1.0?references=all",
+    "https://webfs-sti.oecd.org/files/STI-PIE/IOTs/2025/IOTs_LEONTFT.zip"
+  ],
+  "result": "FAILED_BEFORE_HTTP_RESPONSE",
+  "error": "Temporary failure in name resolution",
+  "interpretation": "The build environment cannot resolve official provider hosts. This is an environment/network limitation, not evidence that the providers or datasets are unavailable. Новый Comext загрузчик использует отдельный фильтрованный endpoint; сеть повторно не проверялась в этой сборке.",
+  "downloaded_full_real_datasets": 0
+}

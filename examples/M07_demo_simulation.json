@@ -1,0 +1,32 @@
+{
+  "dataset_id": "demo-regression-001",
+  "source_id": "synthetic-fixture",
+  "origin": "synthetic",
+  "records": [
+    {
+      "x": 1,
+      "y": 4
+    },
+    {
+      "x": 2,
+      "y": 7
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 13
+    },
+    {
+      "x": 5,
+      "y": 16
+    },
+    {
+      "x": 6,
+      "y": 19
+    }
+  ],
+  "data_mode": "simulation"
+}

@@ -1,0 +1,188 @@
+{
+  "oecd_stan_long_csv": {
+    "required_columns": [
+      "country",
+      "industry",
+      "year",
+      "variable",
+      "value",
+      "flag"
+    ],
+    "variable_mapping": {
+      "VA": "map OECD STAN value-added measure code here",
+      "K_STOCK": "map OECD STAN capital-stock measure code here",
+      "LABOUR": "map OECD STAN labour-input measure code here"
+    },
+    "notes": "Не подставлять gross investment вместо capital stock. Сохранять флаги оценки и пропусков; основную регрессию считать без флагов E/U и отдельно показывать чувствительность."
+  },
+  "oecd_iot_canonical_files": {
+    "Z.csv": "квадратная матрица промежуточных внутренних потоков: строки = отрасли-поставщики, столбцы = отрасли-покупатели",
+    "x.csv": "industry_id,gross_output",
+    "Y.csv": "industry_id,domestic_final_demand",
+    "published_x.csv": "industry_id,published_output; необязательно"
+  },
+  "oecd_iot_value_added_long_csv": {
+    "required_columns": [
+      "industry",
+      "year",
+      "output",
+      "intermediate_consumption",
+      "compensation",
+      "fixed_capital_consumption",
+      "net_operating_surplus",
+      "other_taxes"
+    ],
+    "notes": "Проверить одинаковую оценку, год, единицу и отраслевую классификацию для всех компонентов."
+  },
+  "market_monthly_csv": {
+    "required_columns": [
+      "period",
+      "price_index",
+      "quantity_index",
+      "demand_shifter",
+      "supply_shifter"
+    ],
+    "notes": "Для M03 price_index и quantity_index должны иметь сопоставимый рынок и временной охват. Для M02 нужны два исключённых инструмента с защищаемыми ограничениями исключения."
+  },
+  "eurostat_comext_trade": {
+    "dataset_code": "ds-045409",
+    "required_dimensions": [
+      "freq",
+      "reporter",
+      "partner",
+      "product",
+      "flow",
+      "indicators",
+      "time"
+    ],
+    "default_scope": {
+      "freq": "A",
+      "reporter": "DE",
+      "partner": "WORLD",
+      "flow": [
+        "1",
+        "2"
+      ],
+      "indicators": [
+        "QUANTITY_IN_100KG",
+        "SUPPLEMENTARY_QUANTITY",
+        "VALUE_IN_EUROS"
+      ],
+      "period": "2008–2025"
+    },
+    "required_crosswalk": "PRODCOM product code ↔ CPA/PRODCOM version ↔ CN/HS product code",
+    "notes": "One product/flow/indicator per bounded request. WORLD for a Member State includes intra-EU and extra-EU partners. Never request the unfiltered Comext cube."
+  },
+  "M07_M09_macro_panel": {
+    "candidate_sources": [
+      "OECD STAN 2025",
+      "World Bank WDI",
+      "Eurostat national accounts"
+    ],
+    "required_fields": [
+      "country",
+      "period",
+      "indicator",
+      "value",
+      "unit",
+      "price_basis",
+      "flag"
+    ],
+    "notes": "Choose real/nominal measures, frequency and transformations before estimating; no silent mixing."
+  },
+  "M08_case_design": {
+    "required_fields": [
+      "unit_id",
+      "country_or_region",
+      "treated",
+      "period",
+      "post",
+      "outcome",
+      "covariates",
+      "treatment_date",
+      "cluster_id"
+    ],
+    "notes": "A concrete intervention and treatment/control definition must be selected before a dataset can be called fit for DiD."
+  },
+  "M10_energy_optimisation": {
+    "candidate_source": "Eurostat nrg_bal_c",
+    "required_fields": [
+      "resource",
+      "period",
+      "available_supply",
+      "demand",
+      "unit",
+      "price_or_cost",
+      "conversion_efficiency",
+      "capacity_constraints"
+    ],
+    "notes": "Energy balances alone do not supply technology coefficients and all optimisation constraints."
+  },
+  "M11_linked_markets": {
+    "candidate_sources": [
+      "Eurostat Comext ds-045409",
+      "Eurostat PRODCOM ds-059358/ds-059367",
+      "Eurostat HICP"
+    ],
+    "required_fields": [
+      "market_id",
+      "product_code",
+      "period",
+      "production",
+      "imports",
+      "exports",
+      "price_index",
+      "unit",
+      "classification_version"
+    ],
+    "notes": "Requires product/market concordances and structural identification before causal interpretation."
+  },
+  "M12_inventory": {
+    "macro_candidate_sources": [
+      "Eurostat namq_10_gdp",
+      "Eurostat nama_10_gdp"
+    ],
+    "micro_required_fields": [
+      "firm_or_product_id",
+      "period",
+      "opening_stock",
+      "production_or_receipts",
+      "sales_or_use",
+      "orders",
+      "lead_time",
+      "write_offs",
+      "closing_stock"
+    ],
+    "notes": "Public macro aggregates do not provide complete firm-level order/receipt histories."
+  },
+  "M13_network": {
+    "candidate_sources": [
+      "Eurostat road_go_ta_dctg",
+      "Eurostat Comext ds-045409"
+    ],
+    "required_fields": [
+      "node_from",
+      "node_to",
+      "capacity",
+      "flow",
+      "unit",
+      "period",
+      "distance_or_cost"
+    ],
+    "notes": "Aggregate freight tables do not by themselves define a complete network topology or edge capacities."
+  },
+  "M14_risk_series": {
+    "candidate_sources": [
+      "Eurostat HICP/STS/energy/trade",
+      "World Bank WDI"
+    ],
+    "required_fields": [
+      "period",
+      "risk_variable",
+      "observed_value",
+      "unit",
+      "loss_definition"
+    ],
+    "notes": "Define the risk/loss variable and horizon; report sample size and tail limitations."
+  }
+}

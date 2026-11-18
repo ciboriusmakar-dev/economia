@@ -1,0 +1,83 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Анализ нескольких рынков — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Анализ нескольких рынков</h1><div class="id">Модуль M11</div><span class="badge ok">Расчёт выполнен</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M11; происхождение synthetic; записей 32; SHA-256 входа fefcdfc9f189bae606bc8ff243d0ce1b586608e433570fe0ce4480879a72508b. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>«Зерно» (2025): крупнейший рынок — «Север» (47,2 %); концентрация высокая (HHI 3 409; ориентиры: до 1500 низкая, до 2500 умеренная — условные пороги).</li><li>«Зерно»: цена выше всего на «Восток», ниже всего на «Север»; разброс 22,2 % от средней.</li><li>«Зерно»: цены на рынках меняются не вполне согласованно (средняя корреляция изменений -0,06).</li></ul></div><div class="card"><h2>Доли рынков: Зерно, 2025, %</h2><svg viewBox="0 0 720 158" width="100%" role="img" aria-label="Доли рынков: Зерно, 2025, %"><line x1="230.0" x2="230.0" y1="10" y2="138" class="axis"/><text x="222" y="32" text-anchor="end">Север</text><rect x="230.0" y="19" width="353.4" height="18" rx="2" class="barpos"><title>Север: 47,17</title></rect><text x="589.4" y="32" text-anchor="start">47,17</text><text x="222" y="62" text-anchor="end">Юг</text><rect x="230.0" y="49" width="226.2" height="18" rx="2" class="barpos"><title>Юг: 30,19</title></rect><text x="462.2" y="62" text-anchor="start">30,19</text><text x="222" y="92" text-anchor="end">Восток</text><rect x="230.0" y="79" width="106.0" height="18" rx="2" class="barpos"><title>Восток: 14,15</title></rect><text x="342.0" y="92" text-anchor="start">14,15</text><text x="222" y="122" text-anchor="end">Запад</text><rect x="230.0" y="109" width="63.6" height="18" rx="2" class="barpos"><title>Запад: 8,49</title></rect><text x="299.6" y="122" text-anchor="start">8,49</text></svg></div><div class="card"><h2>Концентрация и цены</h2><table><thead><tr><th class=l>Товар</th><th class=l>Период</th><th>HHI</th><th>Доля трёх крупнейших, %</th><th class=l>Концентрация</th><th>Разброс цен, %</th></tr></thead><tbody><tr><td class=l>Зерно</td><td class=l>2025</td><td>3 409</td><td>91,51</td><td class=l>высокая</td><td>22,16</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Особых замечаний нет.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа fefcdfc9f189bae606bc8ff243d0ce1b586608e433570fe0ce4480879a72508b</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;products&quot;: {
+      &quot;Зерно&quot;: {
+        &quot;period&quot;: &quot;2025&quot;,
+        &quot;shares_pct&quot;: {
+          &quot;Север&quot;: 47.16981132075472,
+          &quot;Юг&quot;: 30.18867924528302,
+          &quot;Восток&quot;: 14.150943396226415,
+          &quot;Запад&quot;: 8.49056603773585
+        },
+        &quot;hhi&quot;: 3408.6863652545394,
+        &quot;top3_pct&quot;: 91.50943396226415,
+        &quot;concentration&quot;: &quot;высокая&quot;,
+        &quot;price_vs_average_pct&quot;: {
+          &quot;Север&quot;: -8.444151347202144,
+          &quot;Юг&quot;: 1.5773474980966373,
+          &quot;Восток&quot;: 13.71987368593459,
+          &quot;Запад&quot;: -6.853069836829029
+        },
+        &quot;price_spread_pct&quot;: 22.164025033136728,
+        &quot;price_change_correlation&quot;: {
+          &quot;markets&quot;: [
+            &quot;Восток&quot;,
+            &quot;Запад&quot;,
+            &quot;Север&quot;,
+            &quot;Юг&quot;
+          ],
+          &quot;matrix&quot;: [
+            [
+              1.0,
+              0.5979154612655992,
+              -0.5272147273200474,
+              0.46444454956009845
+            ],
+            [
+              0.5979154612655992,
+              0.9999999999999999,
+              -0.9952613454592154,
+              -0.43156214473612153
+            ],
+            [
+              -0.5272147273200474,
+              -0.9952613454592154,
+              1.0,
+              0.5072788001067247
+            ],
+            [
+              0.4644445495600984,
+              -0.43156214473612153,
+              0.5072788001067247,
+              1.0
+            ]
+          ],
+          &quot;n&quot;: 7
+        }
+      }
+    }
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 32,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M11&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

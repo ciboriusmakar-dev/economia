@@ -1,0 +1,365 @@
+{
+  "source_directory": "data/pilot_input",
+  "created_at_utc": "2026-11-14T20:02:17.741821+00:00",
+  "ingested_files": 4,
+  "failed_files": 0,
+  "records": [
+    {
+      "source_file": "M01_germany_cement_balance_2021_2025.csv",
+      "source_path": "data/pilot_input/M01_germany_cement_balance_2021_2025.csv",
+      "source_sha256": "1df9f76c058d07c83465ca7e1c108ea3f177e055c8bb02ee48e0c5420b112402",
+      "format": "csv",
+      "retrieved_at_utc": "2026-11-14T20:02:17.739444+00:00",
+      "rows": 5,
+      "columns": [
+        "year",
+        "production_mt",
+        "imports_mt",
+        "exports_mt",
+        "domestic_consumption_mt",
+        "supply_mt",
+        "identified_uses_mt",
+        "unexplained_balance_item_mt",
+        "balance_identity_pass"
+      ],
+      "metadata": {},
+      "units": {
+        "unit_hints": [
+          {
+            "column": "*",
+            "unit_candidate": null,
+            "confidence": "unknown_requires_metadata"
+          }
+        ],
+        "unit_detection_is_advisory": true
+      },
+      "periods": {
+        "column": "year",
+        "observed_periods": 5,
+        "frequency": "annual",
+        "gaps": []
+      },
+      "quality": {
+        "rows": 5,
+        "columns": [
+          "year",
+          "production_mt",
+          "imports_mt",
+          "exports_mt",
+          "domestic_consumption_mt",
+          "supply_mt",
+          "identified_uses_mt",
+          "unexplained_balance_item_mt",
+          "balance_identity_pass"
+        ],
+        "numeric_columns_detected": [
+          "year",
+          "production_mt",
+          "imports_mt",
+          "exports_mt",
+          "domestic_consumption_mt",
+          "supply_mt",
+          "identified_uses_mt",
+          "unexplained_balance_item_mt"
+        ],
+        "missing_by_column": {},
+        "exact_duplicate_rows": 0,
+        "periods": {
+          "column": "year",
+          "observed_periods": 5,
+          "frequency": "annual",
+          "gaps": []
+        },
+        "units_metadata": null,
+        "classification_metadata": null,
+        "issues": [],
+        "warnings": [
+          "Единицы измерения не подтверждены метаданными; автоматическое определение только подсказочное",
+          "Классификация и её версия не подтверждены метаданными"
+        ],
+        "status": "PASS_WITH_WARNINGS"
+      },
+      "normalized_file": "processed/M01_germany_cement_balance_2021_2025.normalized.csv",
+      "normalized_sha256": "336db0601eb37fd1614c953c0d5da6d8407bc371755deb5256237be25dfee505",
+      "source_preserved": true,
+      "dataset_passport": null,
+      "passport_audit": {
+        "status": "NOT_PROVIDED",
+        "errors": [
+          "Паспорт набора не найден"
+        ]
+      },
+      "semantic_validation": "REQUIRES_VALID_PASSPORT_AND_DOMAIN_REVIEW"
+    },
+    {
+      "source_file": "M04_M05_germany_business_sectors_2023.csv",
+      "source_path": "data/pilot_input/M04_M05_germany_business_sectors_2023.csv",
+      "source_sha256": "a283960037d524cc042b67575f8cf52f3969fb61c0b08267082ed89829eeea02",
+      "format": "csv",
+      "retrieved_at_utc": "2026-11-14T20:02:17.740327+00:00",
+      "rows": 6,
+      "columns": [
+        "nace",
+        "sector",
+        "enterprises",
+        "persons_employed",
+        "turnover_eur_mn",
+        "gva_factor_cost_eur_mn",
+        "gross_investment_eur_mn",
+        "staff_expenditure_eur_mn",
+        "year",
+        "staff_cost_per_person_eur",
+        "staff_cost_share_turnover",
+        "gva_share_turnover",
+        "turnover_per_person_eur"
+      ],
+      "metadata": {},
+      "units": {
+        "unit_hints": [
+          {
+            "column": "*",
+            "unit_candidate": null,
+            "confidence": "unknown_requires_metadata"
+          }
+        ],
+        "unit_detection_is_advisory": true
+      },
+      "periods": {
+        "column": "year",
+        "observed_periods": 1,
+        "frequency": "annual",
+        "gaps": []
+      },
+      "quality": {
+        "rows": 6,
+        "columns": [
+          "nace",
+          "sector",
+          "enterprises",
+          "persons_employed",
+          "turnover_eur_mn",
+          "gva_factor_cost_eur_mn",
+          "gross_investment_eur_mn",
+          "staff_expenditure_eur_mn",
+          "year",
+          "staff_cost_per_person_eur",
+          "staff_cost_share_turnover",
+          "gva_share_turnover",
+          "turnover_per_person_eur"
+        ],
+        "numeric_columns_detected": [
+          "enterprises",
+          "persons_employed",
+          "turnover_eur_mn",
+          "gva_factor_cost_eur_mn",
+          "gross_investment_eur_mn",
+          "staff_expenditure_eur_mn",
+          "year",
+          "staff_cost_per_person_eur",
+          "staff_cost_share_turnover",
+          "gva_share_turnover",
+          "turnover_per_person_eur"
+        ],
+        "missing_by_column": {},
+        "exact_duplicate_rows": 0,
+        "periods": {
+          "column": "year",
+          "observed_periods": 1,
+          "frequency": "annual",
+          "gaps": []
+        },
+        "units_metadata": null,
+        "classification_metadata": null,
+        "issues": [],
+        "warnings": [
+          "Единицы измерения не подтверждены метаданными; автоматическое определение только подсказочное",
+          "Классификация и её версия не подтверждены метаданными"
+        ],
+        "status": "PASS_WITH_WARNINGS"
+      },
+      "normalized_file": "processed/M04_M05_germany_business_sectors_2023.normalized.csv",
+      "normalized_sha256": "b7e17888f12780c7c9f1f261cbbaefeab5bffb1a03b0e4beeb8ce1f2922c722f",
+      "source_preserved": true,
+      "dataset_passport": null,
+      "passport_audit": {
+        "status": "NOT_PROVIDED",
+        "errors": [
+          "Паспорт набора не найден"
+        ]
+      },
+      "semantic_validation": "REQUIRES_VALID_PASSPORT_AND_DOMAIN_REVIEW"
+    },
+    {
+      "source_file": "M06_destatis_supply_use_2023.csv",
+      "source_path": "data/pilot_input/M06_destatis_supply_use_2023.csv",
+      "source_sha256": "57ac77cac43f13222e9985ada2fd247b78111bc1dfe7ef272cbbb3cda4cb7d7e",
+      "format": "csv",
+      "retrieved_at_utc": "2026-11-14T20:02:17.740986+00:00",
+      "rows": 3,
+      "columns": [
+        "product_group",
+        "primary_industry_eur_bn",
+        "secondary_industry_eur_bn",
+        "tertiary_industry_eur_bn",
+        "intermediate_use_reported_eur_bn",
+        "final_use_eur_bn",
+        "total_use_eur_bn",
+        "sum_matrix_eur_bn",
+        "matrix_rounding_difference_eur_bn",
+        "use_identity_difference_eur_bn"
+      ],
+      "metadata": {},
+      "units": {
+        "unit_hints": [
+          {
+            "column": "*",
+            "unit_candidate": null,
+            "confidence": "unknown_requires_metadata"
+          }
+        ],
+        "unit_detection_is_advisory": true
+      },
+      "periods": {
+        "column": null,
+        "frequency": "unknown",
+        "gaps": []
+      },
+      "quality": {
+        "rows": 3,
+        "columns": [
+          "product_group",
+          "primary_industry_eur_bn",
+          "secondary_industry_eur_bn",
+          "tertiary_industry_eur_bn",
+          "intermediate_use_reported_eur_bn",
+          "final_use_eur_bn",
+          "total_use_eur_bn",
+          "sum_matrix_eur_bn",
+          "matrix_rounding_difference_eur_bn",
+          "use_identity_difference_eur_bn"
+        ],
+        "numeric_columns_detected": [
+          "primary_industry_eur_bn",
+          "secondary_industry_eur_bn",
+          "tertiary_industry_eur_bn",
+          "intermediate_use_reported_eur_bn",
+          "final_use_eur_bn",
+          "total_use_eur_bn",
+          "sum_matrix_eur_bn",
+          "matrix_rounding_difference_eur_bn",
+          "use_identity_difference_eur_bn"
+        ],
+        "missing_by_column": {},
+        "exact_duplicate_rows": 0,
+        "periods": {
+          "column": null,
+          "frequency": "unknown",
+          "gaps": []
+        },
+        "units_metadata": null,
+        "classification_metadata": null,
+        "issues": [],
+        "warnings": [
+          "Единицы измерения не подтверждены метаданными; автоматическое определение только подсказочное",
+          "Классификация и её версия не подтверждены метаданными"
+        ],
+        "status": "PASS_WITH_WARNINGS"
+      },
+      "normalized_file": "processed/M06_destatis_supply_use_2023.normalized.csv",
+      "normalized_sha256": "393449ed95a8a5371715c0fdffc903c19adb7ef77734867785c286c6c0003f86",
+      "source_preserved": true,
+      "dataset_passport": null,
+      "passport_audit": {
+        "status": "NOT_PROVIDED",
+        "errors": [
+          "Паспорт набора не найден"
+        ]
+      },
+      "semantic_validation": "REQUIRES_VALID_PASSPORT_AND_DOMAIN_REVIEW"
+    },
+    {
+      "source_file": "empirical_germany_gdp_2016_2025.csv",
+      "source_path": "data/pilot_input/empirical_germany_gdp_2016_2025.csv",
+      "source_sha256": "eb012fb0de0bf4757f2c93826a453148fbd78edeefe0bcbd23db3459859a0b11",
+      "format": "csv",
+      "retrieved_at_utc": "2026-11-14T20:02:17.741754+00:00",
+      "rows": 10,
+      "columns": [
+        "year",
+        "gdp_current_usd",
+        "country",
+        "indicator",
+        "source",
+        "status",
+        "price_basis",
+        "currency",
+        "license"
+      ],
+      "metadata": {},
+      "units": {
+        "unit_hints": [
+          {
+            "column": "*",
+            "unit_candidate": null,
+            "confidence": "unknown_requires_metadata"
+          }
+        ],
+        "unit_detection_is_advisory": true
+      },
+      "periods": {
+        "column": "year",
+        "observed_periods": 10,
+        "frequency": "annual",
+        "gaps": []
+      },
+      "quality": {
+        "rows": 10,
+        "columns": [
+          "year",
+          "gdp_current_usd",
+          "country",
+          "indicator",
+          "source",
+          "status",
+          "price_basis",
+          "currency",
+          "license"
+        ],
+        "numeric_columns_detected": [
+          "year",
+          "gdp_current_usd"
+        ],
+        "missing_by_column": {},
+        "exact_duplicate_rows": 0,
+        "periods": {
+          "column": "year",
+          "observed_periods": 10,
+          "frequency": "annual",
+          "gaps": []
+        },
+        "units_metadata": null,
+        "classification_metadata": null,
+        "issues": [],
+        "warnings": [
+          "Единицы измерения не подтверждены метаданными; автоматическое определение только подсказочное",
+          "Классификация и её версия не подтверждены метаданными"
+        ],
+        "status": "PASS_WITH_WARNINGS"
+      },
+      "normalized_file": "processed/empirical_germany_gdp_2016_2025.normalized.csv",
+      "normalized_sha256": "bf7fe939fb351687f4780bbaba7eb2ed1682612011c08fa8b41b3e2710c11fbb",
+      "source_preserved": true,
+      "dataset_passport": null,
+      "passport_audit": {
+        "status": "NOT_PROVIDED",
+        "errors": [
+          "Паспорт набора не найден"
+        ]
+      },
+      "semantic_validation": "REQUIRES_VALID_PASSPORT_AND_DOMAIN_REVIEW"
+    }
+  ],
+  "errors": [],
+  "overall_status": "PASS_WITH_WARNINGS",
+  "warning": "Структурная проверка не подтверждает корректность экономической семантики или лицензии."
+}

@@ -1,0 +1,53 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Причинный анализ — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Причинный анализ</h1><div class="id">Модуль M08</div><span class="badge warn">Расчёт выполнен, есть предупреждения</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M08; происхождение synthetic; записей 96; SHA-256 входа 992e60fe3c01640aa5bacd423cc0e47296324a1d8492f9d554abd40cf499319a. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Группа воздействия: до 23,50, после 27,70. Контрольная группа: до 28,30, после 30,70.</li><li>Оценка эффекта воздействия (разность разностей): 1,799 (95 % интервал 1,785 … 1,814).</li></ul></div><div class="card"><h2>Изменение «после − до»</h2><svg viewBox="0 0 720 128" width="100%" role="img" aria-label="Изменение «после − до»"><line x1="230.0" x2="230.0" y1="10" y2="108" class="axis"/><text x="222" y="32" text-anchor="end">Воздействие</text><rect x="230.0" y="19" width="353.4" height="18" rx="2" class="barpos"><title>Воздействие: 4,20</title></rect><text x="589.4" y="32" text-anchor="start">4,20</text><text x="222" y="62" text-anchor="end">Контроль</text><rect x="230.0" y="49" width="202.0" height="18" rx="2" class="barpos"><title>Контроль: 2,40</title></rect><text x="438.0" y="62" text-anchor="start">2,40</text><text x="222" y="92" text-anchor="end">Разность разностей</text><rect x="230.0" y="79" width="151.5" height="18" rx="2" class="barpos"><title>Разность разностей: 1,80</title></rect><text x="387.5" y="92" text-anchor="start">1,80</text></svg></div><div class="card"><h2>Сравнение групп до и после</h2><table><thead><tr><th class=l>Группа</th><th>До</th><th>После</th><th>Изменение</th></tr></thead><tbody><tr><td class=l>Воздействие</td><td>23,50</td><td>27,70</td><td>4,20</td></tr><tr><td class=l>Контроль</td><td>28,30</td><td>30,70</td><td>2,40</td></tr><tr><td class=l>Разность разностей</td><td>—</td><td>—</td><td>1,80</td></tr></tbody></table></div><div class="card"><h2>Диагностика предпосылок и устойчивости</h2><table><thead><tr><th class=l>Проверка</th><th>Значение</th><th class=l>Заключение</th></tr></thead><tbody><tr><td class=l>Разница трендов до воздействия (должна быть около 0)</td><td>0,01</td><td class=l>z = 0,10</td></tr><tr><td class=l>Плацебо: «эффект» в периоде до реального воздействия (должен быть около 0)</td><td>0,02</td><td class=l>z = 0,10</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Статистическая связь сама по себе не доказывает причинность: оценка верна только если до воздействия группы развивались параллельно и ничто другое не изменилось одновременно с воздействием.</li><li>Мало кластеров (12): кластерные ошибки и нормальный интервал могут быть слишком оптимистичными.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 992e60fe3c01640aa5bacd423cc0e47296324a1d8492f9d554abd40cf499319a</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;n&quot;: 96,
+    &quot;cell_means&quot;: {
+      &quot;treated=0,post=0&quot;: 28.302041666666668,
+      &quot;treated=0,post=1&quot;: 30.70179166666667,
+      &quot;treated=1,post=0&quot;: 23.501541666666668,
+      &quot;treated=1,post=1&quot;: 27.700708333333335
+    },
+    &quot;did_simple&quot;: 1.7994166666666658,
+    &quot;effect&quot;: 1.7994166666666624,
+    &quot;standard_error&quot;: 0.00722388740891186,
+    &quot;p_value_normal_approx&quot;: 0.0,
+    &quot;ci95&quot;: [
+      1.7852578473451952,
+      1.8135754859881297
+    ],
+    &quot;with_controls&quot;: false,
+    &quot;effect_without_controls&quot;: 1.7994166666666624,
+    &quot;clusters&quot;: 12,
+    &quot;pretrend&quot;: {
+      &quot;slope_difference&quot;: 0.009066666666664114,
+      &quot;se&quot;: 0.09036898297039375
+    },
+    &quot;placebo&quot;: {
+      &quot;effect&quot;: 0.024499999999994415,
+      &quot;se&quot;: 0.2439500504683402
+    }
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 96,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M08&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

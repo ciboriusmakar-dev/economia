@@ -1,0 +1,161 @@
+{
+  "suite": "ECONOMIA-reference-suite-v1.1",
+  "count": 14,
+  "passed": 14,
+  "all_passed": true,
+  "tests": [
+    {
+      "fixture_id": "REF-M01",
+      "model": "M01",
+      "passed": true,
+      "actual": {
+        "residual": 0,
+        "balanced": true
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M02",
+      "model": "M02",
+      "passed": true,
+      "actual": {
+        "price": 18.0,
+        "quantity": 64.0
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M03",
+      "model": "M03",
+      "passed": true,
+      "actual": {
+        "elasticity": -0.5
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M04",
+      "model": "M04",
+      "passed": true,
+      "actual": {
+        "output": 24.0
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M05",
+      "model": "M05",
+      "passed": true,
+      "actual": {
+        "total_cost": 400,
+        "average_cost": 20.0
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M06",
+      "model": "M06",
+      "passed": true,
+      "actual": {
+        "output": [
+          139.68253968253967,
+          117.46031746031744
+        ]
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M07",
+      "model": "M07",
+      "passed": true,
+      "actual": {
+        "intercept": 1.0000000000000007,
+        "slope": 1.9999999999999993,
+        "sse": 4.733165431326071e-30
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M08",
+      "model": "M08",
+      "passed": true,
+      "actual": {
+        "effect": 3
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M09",
+      "model": "M09",
+      "passed": true,
+      "actual": {
+        "forecast": [
+          14.0,
+          14.0
+        ]
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M10",
+      "model": "M10",
+      "passed": true,
+      "actual": {
+        "x": 1.0,
+        "y": 3.0,
+        "objective": 9.0,
+        "slack": [
+          0.0,
+          0.0
+        ]
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M11",
+      "model": "M11",
+      "passed": true,
+      "actual": {
+        "q1": 3.6683417085427137,
+        "q2": 3.316582914572864,
+        "p1": 5.668341708542713,
+        "p2": 4.316582914572865
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M12",
+      "model": "M12",
+      "passed": true,
+      "actual": {
+        "sales": 6,
+        "ending_inventory": 2,
+        "unmet_demand": 0
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M13",
+      "model": "M13",
+      "passed": true,
+      "actual": {
+        "max_deliverable": 10,
+        "route_a": 7,
+        "route_b": 3
+      },
+      "type": "synthetic"
+    },
+    {
+      "fixture_id": "REF-M14",
+      "model": "M14",
+      "passed": true,
+      "actual": {
+        "mean": 7.5,
+        "variance": 18.75,
+        "std": 4.330127018922194
+      },
+      "type": "synthetic"
+    }
+  ],
+  "warning": "Синтетические эталоны не являются эмпирической проверкой реальной экономики."
+}

@@ -1,0 +1,148 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Межотраслевой анализ — отчёт ECONOMIA</title><style>
+:root{--bg:#f4f5f2;--panel:#fff;--ink:#1d2421;--mute:#5f6b66;--line:#d9ddd8;--accent:#2f6f5e;--c1:#2f7d4f;--c2:#b5532f;--c3:#3b6ea5;--c4:#8a6bb0;--c5:#a07d1f;--c6:#5f6b66;--ok:#2f7d4f;--warn:#a07d1f;--bad:#b5532f;--chip:#e8ece8}
+@media (prefers-color-scheme:dark){:root{--bg:#121a17;--panel:#1b2622;--ink:#e6ece8;--mute:#9aa8a1;--line:#2e3b36;--accent:#6fbfa5;--c1:#5fc08a;--c2:#e08a63;--c3:#7fb0e0;--c4:#b99ae0;--c5:#d6b24a;--c6:#9aa8a1;--ok:#5fc08a;--warn:#d6b24a;--bad:#e08a63;--chip:#25322d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{font-size:24px;margin:0}.id{color:var(--mute);font-size:14px;margin:2px 0 12px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid currentColor}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.mode{color:var(--mute);font-size:14px;margin:8px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;overflow-x:auto}
+.card h2{font-size:17px;margin:0 0 8px}.main li{margin:7px 0}.main{padding-left:20px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child,th.l,td.l{text-align:left}th{color:var(--mute);font-weight:600}
+.note li{margin:5px 0}.note{padding-left:20px;margin:0}
+svg text{fill:var(--ink);font-size:12px}svg .grid{stroke:var(--line);stroke-dasharray:3 4}svg .axis{stroke:var(--mute)}svg .band{fill:var(--c3);opacity:.18}svg .barpos{fill:var(--c1)}svg .barneg{fill:var(--c2)}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:6px}.leg span{display:flex;gap:6px;align-items:center}
+details summary{cursor:pointer;color:var(--mute)}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--chip);padding:10px;border-radius:8px}
+.foot{color:var(--mute);font-size:13px;margin-top:16px}
+</style></head><body><div class="wrap"><div class="modebar" style="display:flex;gap:6px;align-items:center;margin:0 0 10px;font-size:13px"><span style="color:var(--mute)">Режим:</span><button type="button" data-m="user" class="mb">Пользователь</button><button type="button" data-m="pro" class="mb">Профессионал</button></div><h1>Межотраслевой анализ</h1><div class="id">Модуль M06</div><span class="badge warn">Расчёт выполнен, есть предупреждения</span><div class="mode">Учебные / сценарные данные (не официальная статистика)</div><div class="pro card" style="display:none"><h2>Для профессионала</h2><p class="foot" style="margin:0">Версия модели 1.9.5; набор DEMO-M06; происхождение synthetic; записей 1; SHA-256 входа 71184f7d64a90cbd5dc8b9208a46960a4696c5c613ea248c108aba4d9fb6e97d. Полные параметры и диагностика раскрыты внизу страницы.</p></div><div class="card"><h2>Главное</h2><ul class="main"><li>Отраслей: 4. Матрица A построена, система продуктивна (спектральный радиус 0,371).</li><li>Наибольший мультипликатор выпуска у отрасли «Промышленность»: рост её конечного спроса на 1 даёт рост выпуска всей экономики на 1,74.</li><li>Импортная составляющая: 155,0 (10,0 % валового выпуска).</li><li>Эффект изменения конечного спроса: «Промышленность» +50,0 → общий прирост выпуска 87,0 (из них прямо в этих отраслях 50,0).</li></ul></div><div class="card"><h2>Мультипликаторы выпуска по отраслям</h2><svg viewBox="0 0 720 158" width="100%" role="img" aria-label="Мультипликаторы выпуска по отраслям"><line x1="230.0" x2="230.0" y1="10" y2="138" class="axis"/><text x="222" y="32" text-anchor="end">Сельхоз</text><rect x="230.0" y="19" width="343.7" height="18" rx="2" class="barpos"><title>Сельхоз: 1,69</title></rect><text x="579.7" y="32" text-anchor="start">1,69</text><text x="222" y="62" text-anchor="end">Промышленность</text><rect x="230.0" y="49" width="353.4" height="18" rx="2" class="barpos"><title>Промышленность: 1,74</title></rect><text x="589.4" y="62" text-anchor="start">1,74</text><text x="222" y="92" text-anchor="end">Энергетика</text><rect x="230.0" y="79" width="293.9" height="18" rx="2" class="barpos"><title>Энергетика: 1,45</title></rect><text x="529.9" y="92" text-anchor="start">1,45</text><text x="222" y="122" text-anchor="end">Услуги</text><rect x="230.0" y="109" width="296.2" height="18" rx="2" class="barpos"><title>Услуги: 1,46</title></rect><text x="532.2" y="122" text-anchor="start">1,46</text></svg></div><div class="card"><h2>Отрасли и их взаимосвязи</h2><table><thead><tr><th class=l>Отрасль</th><th>Валовой выпуск</th><th>Конечный спрос</th><th>Мультипликатор выпуска</th><th>Связь «назад»</th><th>Связь «вперёд»</th><th>Доля импорта в затратах, %</th></tr></thead><tbody><tr><td class=l>Сельхоз</td><td>200,0</td><td>112,0</td><td>1,69</td><td>1,07</td><td>0,86</td><td>10,00</td></tr><tr><td class=l>Промышленность</td><td>600,0</td><td>402,0</td><td>1,74</td><td>1,10</td><td>1,17</td><td>13,33</td></tr><tr><td class=l>Энергетика</td><td>250,0</td><td>139,0</td><td>1,45</td><td>0,91</td><td>0,90</td><td>6,00</td></tr><tr><td class=l>Услуги</td><td>500,0</td><td>316,0</td><td>1,46</td><td>0,92</td><td>1,07</td><td>8,00</td></tr></tbody></table></div><div class="card"><h2>Проверка матриц и балансов (расхождение в %)</h2><table><thead><tr><th class=l>Проверка</th><th>Макс. относительное расхождение</th><th class=l>Результат</th></tr></thead><tbody><tr><td class=l>Баланс по строкам: выпуск = продажи отраслям + конечный спрос</td><td>0,0000</td><td class=l>пройдена</td></tr><tr><td class=l>Согласованность x = (I − A)⁻¹y с заданным выпуском</td><td>0,0000</td><td class=l>пройдена</td></tr><tr><td class=l>Баланс по столбцам: выпуск = затраты отраслей + импорт + добавленная стоимость</td><td>0,0000</td><td class=l>пройдена</td></tr></tbody></table></div><div class="card"><h2>Влияние изменения конечного спроса</h2><table><thead><tr><th class=l>Отрасль</th><th>Изменение конечного спроса</th><th>Изменение выпуска</th></tr></thead><tbody><tr><td class=l>Сельхоз</td><td>0,00</td><td>6,01</td></tr><tr><td class=l>Промышленность</td><td>50,00</td><td>61,30</td></tr><tr><td class=l>Энергетика</td><td>0,00</td><td>7,99</td></tr><tr><td class=l>Услуги</td><td>0,00</td><td>11,65</td></tr></tbody></table></div><div class="card"><h2>На что обратить внимание</h2><ul class="note"><li>Коэффициенты A считаются по одному году и предполагают фиксированную технологию; результат — «что будет, если структура затрат не изменится», а не прогноз.</li></ul></div><div class="card"><details><summary>Технические подробности</summary><p class="foot">Версия модели 1.9.5; SHA-256 входа 71184f7d64a90cbd5dc8b9208a46960a4696c5c613ea248c108aba4d9fb6e97d</p><pre>{
+  &quot;outputs&quot;: {
+    &quot;industry_ids&quot;: [
+      &quot;Сельхоз&quot;,
+      &quot;Промышленность&quot;,
+      &quot;Энергетика&quot;,
+      &quot;Услуги&quot;
+    ],
+    &quot;A&quot;: [
+      [
+        0.1,
+        0.08,
+        0.02,
+        0.03
+      ],
+      [
+        0.2,
+        0.13,
+        0.12,
+        0.1
+      ],
+      [
+        0.05,
+        0.11,
+        0.06,
+        0.04
+      ],
+      [
+        0.07,
+        0.15,
+        0.08,
+        0.12
+      ]
+    ],
+    &quot;leontief_inverse&quot;: [
+      [
+        1.1445612889628023,
+        0.12028811917549974,
+        0.04436402441455439,
+        0.054704785867063885
+      ],
+      [
+        0.2944477879019864,
+        1.2259030796115473,
+        0.17615478835183435,
+        0.15735219674123602
+      ],
+      [
+        0.10174114189294096,
+        0.15977223369111704,
+        1.092457461875206,
+        0.07128154102375929
+      ],
+      [
+        0.15048380655014706,
+        0.23305387384012088,
+        0.13286965558160274,
+        1.1740166906861143
+      ]
+    ],
+    &quot;calculated_output&quot;: [
+      200.00000000000003,
+      600.0,
+      250.0,
+      499.99999999999994
+    ],
+    &quot;rho_A&quot;: 0.37065978214079903,
+    &quot;condition_number&quot;: 1.7224440626647612,
+    &quot;output_multipliers&quot;: [
+      1.6912340253078768,
+      1.7390173063182848,
+      1.4458459302231974,
+      1.4573552143181734
+    ],
+    &quot;backward_linkage&quot;: [
+      1.0681277118108372,
+      1.0983060584173454,
+      0.9131486724903006,
+      0.9204175572815168
+    ],
+    &quot;forward_linkage&quot;: [
+      0.8614058278970447,
+      1.1708355653303337,
+      0.9001424634328131,
+      1.0676161433398081
+    ],
+    &quot;balance_checks&quot;: [
+      {
+        &quot;name&quot;: &quot;Баланс по строкам: выпуск = продажи отраслям + конечный спрос&quot;,
+        &quot;max_rel_gap&quot;: 0.0,
+        &quot;ok&quot;: true
+      },
+      {
+        &quot;name&quot;: &quot;Согласованность x = (I − A)⁻¹y с заданным выпуском&quot;,
+        &quot;max_rel_gap&quot;: 1.4210854715202004e-16,
+        &quot;ok&quot;: true
+      },
+      {
+        &quot;name&quot;: &quot;Баланс по столбцам: выпуск = затраты отраслей + импорт + добавленная стоимость&quot;,
+        &quot;max_rel_gap&quot;: 0.0,
+        &quot;ok&quot;: true
+      }
+    ],
+    &quot;import_share&quot;: [
+      0.1,
+      0.13333333333333333,
+      0.06,
+      0.08
+    ],
+    &quot;demand_change&quot;: {
+      &quot;delta_y&quot;: [
+        0.0,
+        50.0,
+        0.0,
+        0.0
+      ],
+      &quot;delta_x&quot;: [
+        6.0144059587749865,
+        61.29515398057737,
+        7.988611684555852,
+        11.652693692006045
+      ]
+    }
+  },
+  &quot;diagnostics&quot;: {
+    &quot;input_record_count&quot;: 1,
+    &quot;dataset_origin&quot;: &quot;synthetic&quot;,
+    &quot;dataset_id&quot;: &quot;DEMO-M06&quot;
+  }
+}</pre></details></div><div class="foot">«Расчёт выполнен» значит, что вычисление прошло без ошибок. Это не эмпирическое подтверждение модели и не гарантия точности. Сценарии и прогнозы — допущения, а не предсказания.</div></div><script>(function(){var K='economia_mode',m='user';try{m=localStorage.getItem(K)||'user'}catch(e){}
+function ap(){document.querySelectorAll('.mb').forEach(function(b){var on=b.dataset.m===m;b.style.cssText='border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;background:'+(on?'var(--c1)':'var(--chip)')+';color:'+(on?'#fff':'var(--ink)')});
+document.querySelectorAll('details').forEach(function(d){d.open=(m==='pro')});document.querySelectorAll('.pro').forEach(function(x){x.style.display=m==='pro'?'':'none'})}
+document.querySelectorAll('.mb').forEach(function(b){b.onclick=function(){m=b.dataset.m;try{localStorage.setItem(K,m)}catch(e){}ap()}});ap()})();</script></body></html>

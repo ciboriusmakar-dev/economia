@@ -1,0 +1,15 @@
+module,datasets,period,frequency,status
+M01,ds-059358;ds-059367;Comext ds-045409;correspondence tables,2008-2025,annual/monthly,fetch+manual
+M02,sts_trtu_m;sts_inpp_m;une_rt_m;irt_st_m,2008-2025,monthly,fetch (instruments: not included)
+M03,sts_trtu_m;prc_hicp_minr;PRODCOM;Comext,2008-2025,monthly,fetch+manual
+M04,OECD STAN DSD_STAN@DF_STAN_2025;capital stock,2008-2024,annual,manual
+M05,OECD IOT IOTs_VA;Destatis cost structure,2008-2023,annual,manual
+M06,OECD IOT DOMIMP;TTL;VA;LEONTFT,2008-2023,annual,manual
+M07,nama_10_gdp;WDI;OECD STAN,2000-2025,annual,fetch+manual
+M08,event-specific (choose policy first),n/a,n/a,manual
+M09,namq_10_gdp;nama_10_gdp;sts_inpr_m;WDI,2000-2025,quarterly/annual,fetch
+M10,nrg_bal_c;technology coefficients,n/a,annual,fetch (aggregates only)+manual
+M11,Comext;PRODCOM;HICP;correspondence tables,2008-2025,monthly,fetch+manual
+M12,namq_10_gdp;firm-level inventory data,n/a,monthly/daily,fetch (macro only)+manual
+M13,road_go_ta_dctg;Comext;network data,n/a,annual,fetch (flows only)+manual
+M14,HICP;STS;nrg_bal_c;ert_bil_eur_m;WDI;insolvency,2000-2025,monthly,fetch+manual

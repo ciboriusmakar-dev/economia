@@ -1,0 +1,32 @@
+{
+  "dataset_id": "demo-leontief-001",
+  "source_id": "synthetic-fixture",
+  "origin": "synthetic",
+  "records": [
+    {
+      "industry_ids": [
+        "A",
+        "B"
+      ],
+      "Z": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "gross_output": [
+        10,
+        10
+      ],
+      "domestic_final_demand": [
+        7,
+        7
+      ]
+    }
+  ],
+  "data_mode": "simulation"
+}
