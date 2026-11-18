@@ -1,0 +1,158 @@
+{
+ "datasets": {
+  "nama_10_gdp": {
+   "title": "ВВП и компоненты, годовые",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:49:32Z",
+     "sha256": "3ba60b8fdc91e95207a099689baf5b997953cfc0d8aa6bd4c663eecd2155f419",
+     "bytes": 3443909
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:49:28Z",
+   "status": "обновлён",
+   "sha256": "3ba60b8fdc91e95207a099689baf5b997953cfc0d8aa6bd4c663eecd2155f419",
+   "bytes": 3443909,
+   "retrieved_utc": "2026-11-18T16:49:32Z",
+   "etag": null,
+   "last_modified": null
+  },
+  "une_rt_m": {
+   "title": "Безработица, месячные",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:49:34Z",
+     "sha256": "c06b03076ef796c726fa13c7b7e1c07775adffc96bc49213950f5f96433cfaec",
+     "bytes": 923281
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:49:32Z",
+   "status": "обновлён",
+   "sha256": "c06b03076ef796c726fa13c7b7e1c07775adffc96bc49213950f5f96433cfaec",
+   "bytes": 923281,
+   "retrieved_utc": "2026-11-18T16:49:34Z",
+   "etag": null,
+   "last_modified": null
+  },
+  "sts_inpr_m": {
+   "title": "Промышленное производство, месячные",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:49:57Z",
+     "sha256": "7434abcfe110ddab20cc8f631e56f124f380abed0e54cb4eea72ed1e3dc98e6c",
+     "bytes": 26089266
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:49:34Z",
+   "status": "обновлён",
+   "sha256": "7434abcfe110ddab20cc8f631e56f124f380abed0e54cb4eea72ed1e3dc98e6c",
+   "bytes": 26089266,
+   "retrieved_utc": "2026-11-18T16:49:57Z",
+   "etag": null,
+   "last_modified": null
+  },
+  "prc_hicp_midx": {
+   "title": "Потребительские цены (HICP), индекс",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:50:10Z",
+     "sha256": "70e3424930418a1ae01b8a3101a549fdafc48fb5e84f25619ec1b95c5c466148",
+     "bytes": 15790880
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:49:57Z",
+   "status": "обновлён",
+   "sha256": "70e3424930418a1ae01b8a3101a549fdafc48fb5e84f25619ec1b95c5c466148",
+   "bytes": 15790880,
+   "retrieved_utc": "2026-11-18T16:50:10Z",
+   "etag": null,
+   "last_modified": null
+  },
+  "sts_trtu_m": {
+   "title": "Розничная торговля, месячные",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:50:17Z",
+     "sha256": "2c525613d8b42a17dd043d73b05d58f0a0cf11fc9966acc17e972fc6024383f4",
+     "bytes": 8374912
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:50:10Z",
+   "status": "обновлён",
+   "sha256": "2c525613d8b42a17dd043d73b05d58f0a0cf11fc9966acc17e972fc6024383f4",
+   "bytes": 8374912,
+   "retrieved_utc": "2026-11-18T16:50:17Z",
+   "etag": null,
+   "last_modified": null
+  },
+  "nrg_bal_c": {
+   "title": "Энергобалансы",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:50:36Z",
+     "sha256": "04711621282936fa0d8f42e6d952fc8f3f1dbe17800334d2a9cb9a98096d5431",
+     "bytes": 22522263
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:50:17Z",
+   "status": "обновлён",
+   "sha256": "04711621282936fa0d8f42e6d952fc8f3f1dbe17800334d2a9cb9a98096d5431",
+   "bytes": 22522263,
+   "retrieved_utc": "2026-11-18T16:50:36Z",
+   "etag": null,
+   "last_modified": null
+  },
+  "wdi_NY.GDP.MKTP.KD": {
+   "title": "Всемирный банк WDI: ВВП, постоянные цены (США$)",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:52:01Z",
+     "sha256": "aaba155e85ab82bf5df678d455b7c32bddba21b03f92f03ed33c4ac3c7c70ac1",
+     "bytes": 11138
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:50:36Z",
+   "status": "обновлён",
+   "sha256": "aaba155e85ab82bf5df678d455b7c32bddba21b03f92f03ed33c4ac3c7c70ac1",
+   "bytes": 11138,
+   "retrieved_utc": "2026-11-18T16:52:01Z",
+   "etag": null,
+   "last_modified": "Wed, 18 Nov 2026 16:52:01 GMT"
+  },
+  "wdi_NY.GDP.MKTP.CD": {
+   "title": "Всемирный банк WDI: ВВП, текущие цены (США$)",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:55:38Z",
+     "sha256": "025dee7ddd85c457b29811dad704d27c78e04889c6511d2478784ef4595f7151",
+     "bytes": 10824
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:52:01Z",
+   "status": "обновлён",
+   "sha256": "025dee7ddd85c457b29811dad704d27c78e04889c6511d2478784ef4595f7151",
+   "bytes": 10824,
+   "retrieved_utc": "2026-11-18T16:55:38Z",
+   "etag": null,
+   "last_modified": "Wed, 18 Nov 2026 16:55:38 GMT"
+  },
+  "wdi_FP.CPI.TOTL.ZG": {
+   "title": "Всемирный банк WDI: Инфляция, ИПЦ (% в год)",
+   "history": [
+    {
+     "retrieved_utc": "2026-11-18T16:56:52Z",
+     "sha256": "9dd75bee73e31614031193ed398f7415ac39915fa9f19f9536a80a604b42a3fc",
+     "bytes": 11878
+    }
+   ],
+   "last_check_utc": "2026-11-18T16:55:38Z",
+   "status": "обновлён",
+   "sha256": "9dd75bee73e31614031193ed398f7415ac39915fa9f19f9536a80a604b42a3fc",
+   "bytes": 11878,
+   "retrieved_utc": "2026-11-18T16:56:52Z",
+   "etag": null,
+   "last_modified": "Wed, 18 Nov 2026 16:56:52 GMT"
+  }
+ },
+ "updated_utc": "2026-11-18T16:56:52Z"
+}
