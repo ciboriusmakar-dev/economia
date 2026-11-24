@@ -9,7 +9,7 @@
      "bytes": 3443909
     }
    ],
-   "last_check_utc": "2026-11-23T14:38:38Z",
+   "last_check_utc": "2026-11-24T14:52:41Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "3ba60b8fdc91e95207a099689baf5b997953cfc0d8aa6bd4c663eecd2155f419",
    "bytes": 3443909,
@@ -34,13 +34,18 @@
      "retrieved_utc": "2026-11-21T12:39:00Z",
      "sha256": "fc180599f5c9b5eaafc4c4246dcd49a92408fc8cc3304ae15be9800186d9003d",
      "bytes": 923404
+    },
+    {
+     "retrieved_utc": "2026-11-24T14:52:49Z",
+     "sha256": "0b69acb03ea5e781acccef35f37815952824897bc5bf831d08c6394fcfe0303b",
+     "bytes": 923468
     }
    ],
-   "last_check_utc": "2026-11-23T14:38:45Z",
-   "status": "без изменений (тот же SHA-256)",
-   "sha256": "fc180599f5c9b5eaafc4c4246dcd49a92408fc8cc3304ae15be9800186d9003d",
-   "bytes": 923404,
-   "retrieved_utc": "2026-11-21T12:39:00Z",
+   "last_check_utc": "2026-11-24T14:52:47Z",
+   "status": "обновлён",
+   "sha256": "0b69acb03ea5e781acccef35f37815952824897bc5bf831d08c6394fcfe0303b",
+   "bytes": 923468,
+   "retrieved_utc": "2026-11-24T14:52:49Z",
    "etag": null,
    "last_modified": null
   },
@@ -58,7 +63,7 @@
      "bytes": 26089383
     }
    ],
-   "last_check_utc": "2026-11-23T14:38:47Z",
+   "last_check_utc": "2026-11-24T14:52:49Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "7a50e9322d52ba34475c5f2b0538e1102535da325f3a5a2aa2f69fdbac18960d",
    "bytes": 26089383,
@@ -75,7 +80,7 @@
      "bytes": 15790880
     }
    ],
-   "last_check_utc": "2026-11-23T14:39:29Z",
+   "last_check_utc": "2026-11-24T14:53:22Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "70e3424930418a1ae01b8a3101a549fdafc48fb5e84f25619ec1b95c5c466148",
    "bytes": 15790880,
@@ -95,13 +100,18 @@
      "retrieved_utc": "2026-11-21T12:40:01Z",
      "sha256": "7058d764297faa8749dfea3c0b8e61f9806782b8a411f57ce18bbb08d44543b0",
      "bytes": 8375186
+    },
+    {
+     "retrieved_utc": "2026-11-24T14:53:53Z",
+     "sha256": "5d3d85206bf753aad8ae90c85f651350a1b757b9b21cba930c70c8c00aa8befd",
+     "bytes": 8375230
     }
    ],
-   "last_check_utc": "2026-11-23T14:39:53Z",
-   "status": "без изменений (тот же SHA-256)",
-   "sha256": "7058d764297faa8749dfea3c0b8e61f9806782b8a411f57ce18bbb08d44543b0",
-   "bytes": 8375186,
-   "retrieved_utc": "2026-11-21T12:40:01Z",
+   "last_check_utc": "2026-11-24T14:53:42Z",
+   "status": "обновлён",
+   "sha256": "5d3d85206bf753aad8ae90c85f651350a1b757b9b21cba930c70c8c00aa8befd",
+   "bytes": 8375230,
+   "retrieved_utc": "2026-11-24T14:53:53Z",
    "etag": null,
    "last_modified": null
   },
@@ -114,7 +124,7 @@
      "bytes": 22522263
     }
    ],
-   "last_check_utc": "2026-11-23T14:40:06Z",
+   "last_check_utc": "2026-11-24T14:53:53Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "04711621282936fa0d8f42e6d952fc8f3f1dbe17800334d2a9cb9a98096d5431",
    "bytes": 22522263,
@@ -131,7 +141,7 @@
      "bytes": 11138
     }
    ],
-   "last_check_utc": "2026-11-23T14:40:42Z",
+   "last_check_utc": "2026-11-24T14:54:21Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "aaba155e85ab82bf5df678d455b7c32bddba21b03f92f03ed33c4ac3c7c70ac1",
    "bytes": 11138,
@@ -148,7 +158,7 @@
      "bytes": 10824
     }
    ],
-   "last_check_utc": "2026-11-23T14:40:44Z",
+   "last_check_utc": "2026-11-24T14:54:28Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "025dee7ddd85c457b29811dad704d27c78e04889c6511d2478784ef4595f7151",
    "bytes": 10824,
@@ -165,7 +175,7 @@
      "bytes": 11878
     }
    ],
-   "last_check_utc": "2026-11-23T14:40:45Z",
+   "last_check_utc": "2026-11-24T14:54:31Z",
    "status": "без изменений (тот же SHA-256)",
    "sha256": "9dd75bee73e31614031193ed398f7415ac39915fa9f19f9536a80a604b42a3fc",
    "bytes": 11878,
@@ -174,5 +184,5 @@
    "last_modified": "Wed, 18 Nov 2026 16:56:52 GMT"
   }
  },
- "updated_utc": "2026-11-23T14:40:46Z"
+ "updated_utc": "2026-11-24T14:55:48Z"
 }
